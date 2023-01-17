@@ -103,12 +103,15 @@ const Login = () => {
   return (
     <div>
       <div>
-        <h2 className="text-center text-4xl font-bold mb-10">Login</h2>
+        <h2 className="text-center text-4xl font-bold mb-4">
+          Sign in to your account
+        </h2>
+        <p className="text-center mb-10">Or, start your 14-day free trial</p>
         <form onSubmit={handleSubmit}>
           <div className="form-control w-full max-w-xs mx-auto mb-10">
             <div className="mb-5">
               <label htmlFor="email" className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text">Email address</span>
               </label>
               <input
                 type="email"
@@ -133,9 +136,9 @@ const Login = () => {
 
             <button
               type="submit"
-              className="btn btn-wide  btn-success mx-auto my-10 text-lg"
+              className="btn btn-wide  btn-warning mx-auto my-10 text-lg"
             >
-              Login
+              Sign in
             </button>
 
             <div className="mx-auto mb-4">
@@ -153,7 +156,10 @@ const Login = () => {
             </div>
             <p>
               New to this website?{" "}
-              <Link to="/register" className="link link-primary">
+              <Link
+                to="/register"
+                className="link link-primary dark:text-white"
+              >
                 Register a New Account
               </Link>
             </p>
