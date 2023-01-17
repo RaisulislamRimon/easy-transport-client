@@ -102,8 +102,8 @@ const Login = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
+      <div className="grid md:grid-cols-2 gap-4">
+        <div className="">
           <img
             src="https://i.ibb.co/HHZ4t2T/login.gif"
             alt="login"
