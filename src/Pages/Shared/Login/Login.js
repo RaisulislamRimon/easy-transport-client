@@ -102,69 +102,78 @@ const Login = () => {
 
   return (
     <div>
-      <div>
-        <h2 className="text-center text-4xl font-bold mb-4">
-          Sign in to your account
-        </h2>
-        <p className="text-center mb-10">Or, start your 14-day free trial</p>
-        <form onSubmit={handleSubmit}>
-          <div className="form-control w-full max-w-xs mx-auto mb-10">
-            <div className="mb-5">
-              <label htmlFor="email" className="label">
-                <span className="label-text">Email address</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="email"
-                className="input input-bordered w-full max-w-xs"
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="password"
-                className="input input-bordered w-full max-w-xs"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="btn btn-wide  btn-warning mx-auto my-10 text-lg"
-            >
-              Sign in
-            </button>
-
-            <div className="mx-auto mb-4">
-              <p className="">Or, Sign in with Google or Github</p>
-              <div className="flex justify-around text-2xl m-5">
-                <FaGoogle
-                  onClick={handleGoogleSignIn}
-                  className="hover:cursor-pointer hover:ring-2 hover:rounded"
-                />
-                <FaGithub
-                  onClick={handleGithubSignIn}
-                  className="hover:cursor-pointer hover:ring-2 hover:rounded"
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <img
+            src="https://i.ibb.co/HHZ4t2T/login.gif"
+            alt="login"
+            className="w-4/5 mx-auto mt-10"
+          />
+        </div>
+        <div className="lg:w-2/3 mt-5">
+          <h2 className="text-center text-4xl font-bold mb-4">
+            Sign in to your account
+          </h2>
+          <p className="text-center mb-10">Or, start your 14-day free trial</p>
+          <form onSubmit={handleSubmit}>
+            <div className="form-control w-full max-w-xs mx-auto mb-10">
+              <div className="mb-5">
+                <label htmlFor="email" className="label">
+                  <span className="label-text">Email address</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  className="input input-bordered w-full max-w-xs"
                 />
               </div>
-            </div>
-            <p>
-              New to this website?{" "}
-              <Link
-                to="/register"
-                className="link link-primary dark:text-white"
+              <div>
+                <label htmlFor="password" className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="password"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="btn btn-wide  btn-warning mx-auto my-10 text-lg"
               >
-                Register a New Account
-              </Link>
-            </p>
-          </div>
-        </form>
+                Sign in
+              </button>
+
+              <div className="mx-auto mb-4">
+                <p className="">Or, Sign in with Google or Github</p>
+                <div className="flex justify-around text-2xl m-5">
+                  <FaGoogle
+                    onClick={handleGoogleSignIn}
+                    className="hover:cursor-pointer hover:ring-2 hover:rounded"
+                  />
+                  <FaGithub
+                    onClick={handleGithubSignIn}
+                    className="hover:cursor-pointer hover:ring-2 hover:rounded"
+                  />
+                </div>
+              </div>
+              <p>
+                New to this website?{" "}
+                <Link
+                  to="/register"
+                  className="link link-primary dark:text-white"
+                >
+                  Register a New Account
+                </Link>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
