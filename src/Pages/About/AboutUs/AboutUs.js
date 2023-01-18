@@ -2,10 +2,6 @@ import React from "react";
 import Team from "../Team/Team";
 import Typewriter from "typewriter-effect";
 
- 
-
-
-
 const AboutUs = () => {
   return (
     <div>
@@ -14,10 +10,10 @@ const AboutUs = () => {
     </div>
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
      <div data-aos="fade-right">
-      <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
+      <div className="card w-96 h-80  bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25  rounded-full mt-5  ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/128807505_169881281502031_3240557582104686009_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGGHz2AEmvEbXXVG2CgK6QInGuWPpXBc4uca5Y-lcFzi-oWjnaX2O_Cj5rV-cVZzTnJ0oyEr-W271-d4JepyaAN&_nc_ohc=pmgSD45LZZkAX8_Xw2v&_nc_ht=scontent.fdac138-1.fna&oh=00_AfDA3eoAa4ibkVdf0g2kjlRsRxFbFi_tlsjXZGf3u_aLMw&oe=63EE44E6" alt="" className="h-20" />
+          <div className="w-48 h-48 d-flex justify-center align-items  rounded-full mt-5  ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://i.ibb.co/mzrJ3Jw/1670482266862.jpg" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
@@ -45,12 +41,12 @@ const AboutUs = () => {
      <div data-aos="fade-right">
       <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://placeimg.com/192/192/people" alt="" />
+          <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://i.ibb.co/30X80r2/320690960-681327823404895-7784678004093660911-n.png" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
-          <p className="text-2xl ">Chamok Barmon</p>
+          <p className="text-2xl ">Tasfia Jahan Tania</p>
          <div className="text-1xl">
          <Typewriter
             options={{
@@ -73,12 +69,12 @@ const AboutUs = () => {
      <div data-aos="fade-right">
       <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://placeimg.com/192/192/people" alt="" />
+          <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://i.ibb.co/1vy72dm/RIMON.jpg" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
-          <p className="text-2xl ">Chamok Barmon</p>
+          <p className="text-2xl ">Raisul Islam Rimon</p>
          <div className="text-1xl">
          <Typewriter
             options={{
@@ -101,12 +97,12 @@ const AboutUs = () => {
      <div data-aos="fade-right">
       <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://placeimg.com/192/192/people" alt="" />
+          <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/120351632_2979715158924038_7100075884627000207_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH-M-VdVCgQXgH914inOCICh9jI18t6D-iH2MjXy3oP6AzGner3pMiIMgr66-4D6GWfQK02sBsfW5bsAjeOLpfM&_nc_ohc=urbNxtRN_fcAX_glz0T&_nc_ht=scontent.fdac138-1.fna&oh=00_AfDkccd-yFJYaHEPt7ThiCcdLMlozpRCs4cwy3roKddYAg&oe=63EF1D68" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
-          <p className="text-2xl ">Chamok Barmon</p>
+          <p className="text-2xl ">Md Asik</p>
          <div className="text-1xl">
          <Typewriter
             options={{
@@ -129,12 +125,12 @@ const AboutUs = () => {
      <div data-aos="fade-right">
       <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://placeimg.com/192/192/people" alt="" />
+          <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/56795701_581119252400678_2014714320411164672_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFvMn1f07BhbpXu3YtpNa1CaXqS6oEPZ2ppepLqgQ9narBJi1uX0MCCphxY-2ZSF_tpbXNFJwFm0_hsk96hcRrI&_nc_ohc=3kHDpSyLUbwAX98HrHl&tn=kUhz14FdmQsO1GqT&_nc_ht=scontent.fdac138-1.fna&oh=00_AfCckrlUl0PzaM8TKVvDAjbBI6mDqvci_X9o13WsnWUvtg&oe=63EF1C28" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
-          <p className="text-2xl ">Chamok Barmon</p>
+          <p className="text-2xl ">Md Alamin</p>
          <div className="text-1xl">
          <Typewriter
             options={{
@@ -156,12 +152,12 @@ const AboutUs = () => {
      <div data-aos="fade-right">
       <div className="card w-96 h-80 bg-gray-700 p-5 ml-12 shadow-xl mt-16">
         <div className="avatar ">
-          <div className="w-25 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://placeimg.com/192/192/people" alt="" />
+          <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/319613814_1088855011808026_8797957363503472835_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE9XKcHAXjorjL0Re8ZHuFvB8G2sY87804HwbaxjzvzThq6rVlFHJ4baTJw017OavBinxnbAo0jOzcMB8OGDx26&_nc_ohc=sdkH8uluqV8AX9qL8X4&_nc_ht=scontent.fdac138-1.fna&oh=00_AfDSN_ZkCij36wQDrsDkJI8kIYz854UuXylX4yz49X-vFA&oe=63CBFC92" alt="" />
           </div>
         </div>
         <div className="card-body text-black font-bold text-center -mt-5">
-          <p className="text-2xl ">Chamok Barmon</p>
+          <p className="text-2xl ">Robin Mahmud</p>
          <div className="text-1xl">
          <Typewriter
             options={{
