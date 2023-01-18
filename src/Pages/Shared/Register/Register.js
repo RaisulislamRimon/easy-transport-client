@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Register = () => {
-  const [checked, setChecked] = useState("rider");
+  const [checked, setChecked] = useState("");
   const { createUser, updateUserProfile, providerLogin } =
     useContext(AuthContext);
 
@@ -236,7 +236,7 @@ const Register = () => {
                         type="radio"
                         name="userType"
                         value="rider"
-                        checked
+                        // checked
                         className="radio checked:bg-blue-500"
                         onChange={() => {
                           setChecked("rider");
