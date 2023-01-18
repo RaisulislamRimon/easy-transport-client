@@ -15,7 +15,6 @@ const Freight = () => {
                                 <p className='text-3xl mt-6'><FiUser /> </p>
                                 <p className='mt-3 font-semibold'>Carrier</p>
                             </button>
-
                         </div>
                         <div className='w-[150px] h-[150px] bg-white rounded text-black'>
 

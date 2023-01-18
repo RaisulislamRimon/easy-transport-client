@@ -24,11 +24,9 @@ const Business = () => {
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                             <div className="collapse-title font-medium flex items-center gap-3">
-
                                 <div>
                                     Managing travel and meal programs
                                 </div>
-
                             </div>
                             <div className="collapse-content">
                                 <div><button className='font-semibold'>Managing expense codes</button></div>
