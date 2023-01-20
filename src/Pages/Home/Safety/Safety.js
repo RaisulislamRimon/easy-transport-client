@@ -4,9 +4,9 @@ import SafetyFirst from "../../../Images/safety-first.jpg";
 
 const Safety = () => {
   return (
-    <div className="flex items-center my-20 mx-20">
+    <div className="grid gap-5 lg:grid-cols-2 items-center my-20 lg:mx-20">
       <div>
-        <img src={SafetyFirst} alt="" />
+        <img src="https://i.ibb.co/Y0677Dc/90421-car-in-movement.gif" alt="" />
       </div>
       <div className="p-4">
         <h2 className="text-4xl">Your safety comes first always</h2>
