@@ -45,7 +45,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -89,7 +88,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -130,7 +128,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -158,7 +155,6 @@ const AboutUs = () => {
                   options={{
                     strings: [
                       "MERN Stack Developer",
-
                       "Programmer",
                       "Web Developer",
                       "Font-end-Developer"
@@ -175,7 +171,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -219,7 +214,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -247,7 +241,6 @@ const AboutUs = () => {
                   options={{
                     strings: [
                       "MERN Stack Developer",
-
                       "Web Developer",
                       "Programmer"
                     ],
@@ -263,7 +256,6 @@ const AboutUs = () => {
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-               
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -275,8 +267,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
-     
     </div>
   );
 };
