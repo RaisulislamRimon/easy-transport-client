@@ -8,6 +8,7 @@ import Freight from "../../Pages/Help/Freight";
 import Help from "../../Pages/Help/Help";
 import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
+import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/help/bikes',
         element: <Bikes></Bikes>
+      },
+      {
+        path: '/ride',
+        element: <Banner></Banner>
       },
       {
         path: '/help/business',
