@@ -35,7 +35,7 @@ const CommunitiesCards = () => {
                 </h1>
                 <h1 className='text-4xl font-bold'> Communities forward</h1>
             </div>
-            <div className='grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-11'>
+            <div className='grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-11'>
                 {
                     cardData.map(card => <CommunitiesCard
                         key={card.id}
