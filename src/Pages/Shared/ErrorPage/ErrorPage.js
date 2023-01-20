@@ -21,9 +21,11 @@ const ErrorPage = () => {
               <button className="btn btn-error">Go to home</button>
             </Link>
           </div>
+
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
