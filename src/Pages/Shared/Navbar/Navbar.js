@@ -23,19 +23,11 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <Link>Ride</Link>
-              </li>
-              <li>
-                <Link to="/help">Help</Link>
-              </li>
-              <li>
-                <Link>About</Link>
-              </li>
+
+            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><Link to='/ride'>Ride</Link></li>
+              <li><Link to='/help'>Help</Link></li>
+              <li><Link to='/about'>About</Link></li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
@@ -44,15 +36,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link>Ride</Link>
-            </li>
-            <li>
-              <Link to="/help">Help</Link>
-            </li>
-            <li>
-              <Link>About</Link>
-            </li>
+
+            <li><Link to='/ride'>Ride</Link></li>
+            <li><Link to='/help'>Help</Link></li>
+            <li><Link to='/about'>About</Link></li>
+
           </ul>
         </div>
         <div className="navbar-end">
