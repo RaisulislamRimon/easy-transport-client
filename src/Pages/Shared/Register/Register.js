@@ -46,130 +46,129 @@ const Register = () => {
       return;
     }
 
-    createUser(email, password)
-      .then((result) => {
-        const userIdFirebase = result.user.uid;
+    createUser(email, password).then((result) => {
+      const userIdFirebase = result.user.uid;
 
-        const userInfo = {
-          name,
-          email,
-          password,
-          checked,
-          userIdFirebase,
-          emailVerified: false,
-        };
-        console.log(userInfo);
+      const userInfo = {
+        name,
+        email,
+        password,
+        checked,
+        userIdFirebase,
+        emailVerified: false,
+      };
+      console.log(userInfo);
 
-        fetch("url/signup", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(userInfo),
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-            if (data.acknowledged) {
-              Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Account created successfully",
-                showConfirmButton: false,
-                timer: 2000,
-              });
-            }
-          });
-
-        form.reset();
-        updateUserProfile({
-          displayName: name,
-          // photoURL: photoUrl,
-        });
-        fetch("url/jwt", {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(email),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            // console.log(data);
-            localStorage.setItem("easytransport", data?.token);
-            navigate(from, { replace: true });
-          });
+      fetch("https://easy-transport-server.vercel.app/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userInfo),
       })
-      .catch((error) => {
-        console.error(error);
-        Swal.fire({
-          position: "center",
-          icon: "error",
-          title:
-            (error?.code && error?.code) ||
-            "The email address is already in use by another account.",
-          showConfirmButton: false,
-          timer: 2000,
-        });
-      });
-  };
-
-  const handleGoogleLogin = () => {
-    providerLogin(googleProvider)
-      .then((result) => {
-        if (result?.user?.uid) {
-          const userInfo = {
-            name: result?.user?.displayName,
-            email: result?.user?.email,
-            checked: "rider",
-            userIdFirebase: result?.user?.uid,
-            emailVerified: result?.user?.emailVerified,
-          };
-
-          fetch("url/signup", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userInfo),
-          })
-            .then((res) => res.json())
-            .then((data) => {
-              if (data.acknowledged) {
-                Swal.fire({
-                  position: "center",
-                  icon: "success",
-                  title: "Account created successfully",
-                  showConfirmButton: false,
-                  timer: 2000,
-                });
-                fetch("url/jwt", {
-                  method: "POST",
-                  headers: {
-                    "content-type": "application/json",
-                  },
-                  body: JSON.stringify(userInfo.email),
-                })
-                  .then((response) => response.json())
-                  .then((data) => {
-                    // console.log(data);
-                    localStorage.setItem("easytransport", data?.token);
-                    navigate(from, { replace: true });
-                  });
-              }
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          if (data.acknowledged) {
+            Swal.fire({
+              position: "center",
+              icon: "success",
+              title: "Account created successfully",
+              showConfirmButton: false,
+              timer: 2000,
             });
-        }
-      })
-      .catch((error) => {
-        Swal.fire({
-          position: "center",
-          icon: "error",
-          title: "Please try again",
-          showConfirmButton: false,
-          timer: 2000,
+          }
         });
+
+      // form.reset();
+      updateUserProfile({
+        displayName: name,
+        // photoURL: photoUrl,
       });
+      //   fetch("url/jwt", {
+      //     method: "POST",
+      //     headers: {
+      //       "content-type": "application/json",
+      //     },
+      //     body: JSON.stringify(email),
+      //   })
+      //     .then((response) => response.json())
+      //     .then((data) => {
+      //       // console.log(data);
+      //       localStorage.setItem("easytransport", data?.token);
+      //       navigate(from, { replace: true });
+      //     });
+      // })
+      // .catch((error) => {
+      //   console.error(error);
+      //   Swal.fire({
+      //     position: "center",
+      //     icon: "error",
+      //     title:
+      //       (error?.code && error?.code) ||
+      //       "The email address is already in use by another account.",
+      //     showConfirmButton: false,
+      //     timer: 2000,
+      //   });
+    });
   };
+
+  // const handleGoogleLogin = () => {
+  //   providerLogin(googleProvider)
+  //     .then((result) => {
+  //       if (result?.user?.uid) {
+  //         const userInfo = {
+  //           name: result?.user?.displayName,
+  //           email: result?.user?.email,
+  //           checked: "rider",
+  //           userIdFirebase: result?.user?.uid,
+  //           emailVerified: result?.user?.emailVerified,
+  //         };
+
+  //         fetch("url/signup", {
+  //           method: "POST",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //           },
+  //           body: JSON.stringify(userInfo),
+  //         })
+  //           .then((res) => res.json())
+  //           .then((data) => {
+  //             if (data.acknowledged) {
+  //               Swal.fire({
+  //                 position: "center",
+  //                 icon: "success",
+  //                 title: "Account created successfully",
+  //                 showConfirmButton: false,
+  //                 timer: 2000,
+  //               });
+  //               fetch("url/jwt", {
+  //                 method: "POST",
+  //                 headers: {
+  //                   "content-type": "application/json",
+  //                 },
+  //                 body: JSON.stringify(userInfo.email),
+  //               })
+  //                 .then((response) => response.json())
+  //                 .then((data) => {
+  //                   // console.log(data);
+  //                   localStorage.setItem("easytransport", data?.token);
+  //                   navigate(from, { replace: true });
+  //                 });
+  //             }
+  //           });
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       Swal.fire({
+  //         position: "center",
+  //         icon: "error",
+  //         title: "Please try again",
+  //         showConfirmButton: false,
+  //         timer: 2000,
+  //       });
+  //     });
+  // };
   return (
     <div>
       <Helmet>
@@ -266,12 +265,12 @@ const Register = () => {
                   Sign Up
                 </button>
 
-                <div onClick={handleGoogleLogin} className="mx-auto btn mb-4">
+                {/* <div onClick={handleGoogleLogin} className="mx-auto btn mb-4">
                   <p className="">Or, Sign up with Google</p>
                   <div className="flex justify-around text-2xl text-center">
                     <FaGoogle className="hover:cursor-pointer ml-3 text-lg" />
                   </div>
-                </div>
+                </div> */}
                 <p>
                   Already have an account?{" "}
                   <Link
