@@ -59,8 +59,8 @@ const Register = () => {
       };
       console.log(userInfo);
 
-      fetch("http://localhost:5000/signup", {
-        // fetch("https://easy-transport-server.vercel.app/signup", {
+      // fetch("http://localhost:5000/signup", {
+      fetch("https://easy-transport-server.vercel.app/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -126,7 +126,8 @@ const Register = () => {
             emailVerified: result?.user?.emailVerified,
           };
 
-          fetch("http://localhost:5000/signup", {
+          // fetch("http://localhost:5000/signup", {
+          fetch("https://easy-transport-server.vercel.app/signup", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
