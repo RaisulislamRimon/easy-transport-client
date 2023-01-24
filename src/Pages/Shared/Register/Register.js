@@ -24,7 +24,7 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    if (email === "" || password === "") {
+    if (email === "" || password === "" || checked === "") {
       Swal.fire({
         position: "center",
         icon: "error",
