@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -24,10 +27,19 @@ const Navbar = () => {
               </svg>
             </label>
 
-            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><Link to='/ride'>Ride</Link></li>
-              <li><Link to='/help'>Help</Link></li>
-              <li><Link to='/about'>About</Link></li>
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link to="/ride">Ride</Link>
+              </li>
+              <li>
+                <Link to="/help">Help</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
@@ -36,17 +48,27 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-
-            <li><Link to='/ride'>Ride</Link></li>
-            <li><Link to='/help'>Help</Link></li>
-            <li><Link to='/about'>About</Link></li>
-
+            <li>
+              <Link to="/ride">Ride</Link>
+            </li>
+            <li>
+              <Link to="/help">Help</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn">
-            Login
-          </Link>
+          {user?.email ? (
+            <button onClick={logOut} className="btn">
+              Logout
+            </button>
+          ) : (
+            <Link to="/login" className="btn">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>

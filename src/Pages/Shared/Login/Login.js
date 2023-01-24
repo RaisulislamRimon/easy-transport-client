@@ -84,21 +84,21 @@ const Login = () => {
       });
   };
 
-  const handleGithubSignIn = () => {
-    githubSignIn(githubProvider)
-      .then((result) => {
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        Swal.fire({
-          position: "center",
-          icon: "error",
-          title: "Please try again",
-          showConfirmButton: false,
-          timer: 3000,
-        });
-      });
-  };
+  // const handleGithubSignIn = () => {
+  //   githubSignIn(githubProvider)
+  //     .then((result) => {
+  //       navigate(from, { replace: true });
+  //     })
+  //     .catch((error) => {
+  //       Swal.fire({
+  //         position: "center",
+  //         icon: "error",
+  //         title: "Please try again",
+  //         showConfirmButton: false,
+  //         timer: 3000,
+  //       });
+  //     });
+  // };
 
   return (
     <div>
@@ -150,16 +150,19 @@ const Login = () => {
               </button>
 
               <div className="mx-auto mb-4">
-                <p className="">Or, Sign in with Google or Github</p>
+                <p className="">
+                  Or, Sign in with Google
+                  {/* or Github */}
+                </p>
                 <div className="flex justify-around text-2xl m-5">
                   <FaGoogle
                     onClick={handleGoogleSignIn}
                     className="hover:cursor-pointer hover:ring-2 hover:rounded"
                   />
-                  <FaGithub
+                  {/* <FaGithub
                     onClick={handleGithubSignIn}
                     className="hover:cursor-pointer hover:ring-2 hover:rounded"
-                  />
+                  /> */}
                 </div>
               </div>
               <p>
