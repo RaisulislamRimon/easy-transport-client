@@ -114,62 +114,63 @@ const Register = () => {
     });
   };
 
-  // const handleGoogleLogin = () => {
-  //   providerLogin(googleProvider)
-  //     .then((result) => {
-  //       if (result?.user?.uid) {
-  //         const userInfo = {
-  //           name: result?.user?.displayName,
-  //           email: result?.user?.email,
-  //           checked: "rider",
-  //           userIdFirebase: result?.user?.uid,
-  //           emailVerified: result?.user?.emailVerified,
-  //         };
+  const handleGoogleLogin = () => {
+    providerLogin(googleProvider)
+      .then((result) => {
+        if (result?.user?.uid) {
+          const userInfo = {
+            name: result?.user?.displayName,
+            email: result?.user?.email,
+            checked: "rider",
+            userIdFirebase: result?.user?.uid,
+            emailVerified: result?.user?.emailVerified,
+          };
 
-  //         fetch("url/signup", {
-  //           method: "POST",
-  //           headers: {
-  //             "Content-Type": "application/json",
-  //           },
-  //           body: JSON.stringify(userInfo),
-  //         })
-  //           .then((res) => res.json())
-  //           .then((data) => {
-  //             if (data.acknowledged) {
-  //               Swal.fire({
-  //                 position: "center",
-  //                 icon: "success",
-  //                 title: "Account created successfully",
-  //                 showConfirmButton: false,
-  //                 timer: 2000,
-  //               });
-  //               fetch("url/jwt", {
-  //                 method: "POST",
-  //                 headers: {
-  //                   "content-type": "application/json",
-  //                 },
-  //                 body: JSON.stringify(userInfo.email),
-  //               })
-  //                 .then((response) => response.json())
-  //                 .then((data) => {
-  //                   // console.log(data);
-  //                   localStorage.setItem("easytransport", data?.token);
-  //                   navigate(from, { replace: true });
-  //                 });
-  //             }
-  //           });
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       Swal.fire({
-  //         position: "center",
-  //         icon: "error",
-  //         title: "Please try again",
-  //         showConfirmButton: false,
-  //         timer: 2000,
-  //       });
-  //     });
-  // };
+          fetch("http://localhost:5000/signup", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userInfo),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.acknowledged) {
+                Swal.fire({
+                  position: "center",
+                  icon: "success",
+                  title: "Account created successfully",
+                  showConfirmButton: false,
+                  timer: 2000,
+                });
+                // fetch("url/jwt", {
+                //   method: "POST",
+                //   headers: {
+                //     "content-type": "application/json",
+                //   },
+                //   body: JSON.stringify(userInfo.email),
+                // })
+                //   .then((response) => response.json())
+                //   .then((data) => {
+                //     // console.log(data);
+                //     localStorage.setItem("easytransport", data?.token);
+                //     navigate(from, { replace: true });
+                //   });
+              }
+            });
+        }
+      })
+      .catch((error) => {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Please try again",
+          showConfirmButton: false,
+          timer: 2000,
+        });
+      });
+  };
+
   return (
     <div>
       <Helmet>
@@ -266,12 +267,12 @@ const Register = () => {
                   Sign Up
                 </button>
 
-                {/* <div onClick={handleGoogleLogin} className="mx-auto btn mb-4">
+                <div onClick={handleGoogleLogin} className="mx-auto btn mb-4">
                   <p className="">Or, Sign up with Google</p>
                   <div className="flex justify-around text-2xl text-center">
                     <FaGoogle className="hover:cursor-pointer ml-3 text-lg" />
                   </div>
-                </div> */}
+                </div>
                 <p>
                   Already have an account?{" "}
                   <Link
