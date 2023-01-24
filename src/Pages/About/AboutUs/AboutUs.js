@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Team from "../Team/Team";
 import Typewriter from "typewriter-effect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutUs = () => {
+
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <div>
        <Team />
@@ -10,9 +16,9 @@ const AboutUs = () => {
         ..... About us .....
       </h1>
       <div></div>
-      <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div data-aos="fade-right">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16">
+      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div >
+          <div data-aos="fade-right" data-aos-duration='1000' className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 d-flex justify-center align-items  rounded-full mt-5  ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
@@ -55,7 +61,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right">
+        <div data-aos="zoom-in-up" data-aos-duration='1000' >
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -98,7 +104,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right">
+        <div data-aos="fade-up-left" data-aos-duration='1000' >
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -138,7 +144,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" data-aos-duration='1000'>
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -181,7 +187,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right">
+        <div data-aos="zoom-in-down" data-aos-duration='2000'>
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -224,7 +230,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right">
+        <div data-aos="fade-left" data-aos-duration='1000'>
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
