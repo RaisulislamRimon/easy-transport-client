@@ -169,7 +169,7 @@ const Login = () => {
                 New to this website?{" "}
                 <Link
                   to="/register"
-                  className="link link-primary dark:text-white"
+                  className="link link-primary"
                 >
                   Register a New Account
                 </Link>
