@@ -10,6 +10,7 @@ import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
+import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
@@ -25,40 +26,44 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/help',
-        element: <Help></Help>
+        path: "/help",
+        element: <Help></Help>,
       },
       {
-        path: '/help/riders',
-        element: <Riders></Riders>
+        path: "/help/riders",
+        element: <Riders></Riders>,
       },
       {
-        path: '/help/driving',
-        element: <Driving></Driving>
+        path: "/help/driving",
+        element: <Driving></Driving>,
       },
       {
-        path: '/help/marchants',
-        element: <Marchants></Marchants>
+        path: "/help/marchants",
+        element: <Marchants></Marchants>,
       },
       {
-        path: '/help/bikes',
-        element: <Bikes></Bikes>
+        path: "/help/bikes",
+        element: <Bikes></Bikes>,
       },
       {
-        path: '/ride',
-        element: <Banner></Banner>
+        path: "/ride",
+        element: <Banner></Banner>,
       },
       {
-        path: '/help/business',
-        element: <Business></Business>
+        path: "/help/business",
+        element: <Business></Business>,
       },
       {
-        path: '/help/freight',
-        element: <Freight></Freight>
+        path: "/help/freight",
+        element: <Freight></Freight>,
       },
       {
         path: "/about",
         element: <AboutUs />,
+      },
+      {
+        path: "/safety",
+        element: <SafetyDetails />,
       },
       {
         path: "/login",
