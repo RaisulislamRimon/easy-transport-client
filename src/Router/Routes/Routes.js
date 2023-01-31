@@ -11,6 +11,7 @@ import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
+import AboutSefty from "../../Pages/Home/Safety/AboutSefty";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/help/freight',
         element: <Freight></Freight>
+      },
+      {
+        path: '/safety',
+        element: <AboutSefty></AboutSefty>
       },
       {
         path: '/contract',
