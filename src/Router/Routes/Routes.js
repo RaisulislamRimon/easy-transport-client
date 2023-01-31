@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import AboutUs from "../../Pages/About/AboutUs/AboutUs";
+import Contract from "../../Pages/Contract/Contract";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -10,6 +11,7 @@ import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
+import AboutSefty from "../../Pages/Home/Safety/AboutSefty";
 import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
       {
         path: "/help/freight",
         element: <Freight></Freight>,
+      },
+      {
+        path: '/safety',
+        element: <AboutSefty></AboutSefty>
+      },
+      {
+        path: '/contract',
+        element: <Contract></Contract>,
       },
       {
         path: "/about",

@@ -13,7 +13,6 @@ const Home = () => {
       <Category></Category>
       <CommunitiesCards></CommunitiesCards>
       <Safety></Safety>
-
     </div>
   );
 };
