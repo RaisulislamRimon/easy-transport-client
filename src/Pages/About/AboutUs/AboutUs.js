@@ -6,17 +6,17 @@ import 'aos/dist/aos.css';
 
 const AboutUs = () => {
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
-  },[])
+  }, [])
   return (
     <div>
-       <Team />
+      <Team />
       <h1 className="text-center font-serif font-bold text-4xl mt-10">
         ..... About us .....
       </h1>
       <div></div>
-      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div >
           <div data-aos="fade-right" data-aos-duration='1000' className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
@@ -44,13 +44,13 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -86,14 +86,14 @@ const AboutUs = () => {
                     loop: true
                   }}
                 />
-                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <div className="mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -126,14 +126,14 @@ const AboutUs = () => {
                     loop: true
                   }}
                 />
-                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <div className="mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -169,14 +169,14 @@ const AboutUs = () => {
                     loop: true
                   }}
                 />
-                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <div className="mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -212,14 +212,14 @@ const AboutUs = () => {
                     loop: true
                   }}
                 />
-                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <div className="mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
@@ -254,14 +254,14 @@ const AboutUs = () => {
                     loop: true
                   }}
                 />
-                 <div className="mt-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <div className="mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
