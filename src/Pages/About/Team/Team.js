@@ -15,8 +15,8 @@ const Team = () => {
       <div className=" p-16 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-base-200">
         <div data-aos="fade-right" data-aos-duration='2000'>
           <img
-            src="https://www.mosio.com/mobileanswers/wp-content/uploads/2019/12/text-messaging-for-team-building.jpg"
-            className="max-w-sm rounded-lg wi h-96 ml-52   shadow-3xl"
+            src="https://cdn.pixabay.com/photo/2020/02/20/06/24/team-4864038_1280.jpg"
+            className="max-w-sm rounded-lg lg:ml-52  image-fluid lg:w-96 lg:h-80 md:w-1/2  fluid   shadow-3xl"
             alt=""
           />
         </div>
