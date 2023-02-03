@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import AboutUs from "../../Pages/About/AboutUs/AboutUs";
+import Contract from "../../Pages/Contract/Contract";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/help/freight",
         element: <Freight></Freight>,
+      },
+      {
+        path: '/contract',
+        element: <Contract></Contract>,
       },
       {
         path: "/about",
