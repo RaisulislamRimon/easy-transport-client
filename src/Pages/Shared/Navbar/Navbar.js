@@ -40,6 +40,9 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
+              <li>
+                <Link to="/contract">Contract</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
@@ -56,6 +59,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contract">Contract</Link>
             </li>
           </ul>
         </div>
