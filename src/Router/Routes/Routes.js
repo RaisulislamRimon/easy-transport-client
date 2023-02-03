@@ -15,7 +15,7 @@ import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
-
+import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -67,10 +67,23 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
+
+        path: '/services',
+        element: <AllCategories></AllCategories>
+      },
+      {
+        path: '/services/:id',
+        element: <AllCategories></AllCategories>,
+        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+      },
+
+      {
+
         path: "/safety",
         element: <SafetyDetails />,
       },
       {
+
         path: "/login",
         element: <Login />,
       },
@@ -83,7 +96,9 @@ const router = createBrowserRouter([
         element: <ErrorPage />,
       },
     ],
+
   },
+
 ]);
 
 export default router;

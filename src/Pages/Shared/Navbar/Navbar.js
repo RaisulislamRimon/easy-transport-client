@@ -66,11 +66,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {user?.email ? (
+          {user?.email ?(
             <button onClick={logOut} className="btn">
               Logout
             </button>
-          ) : (
+          ):(
             <Link to="/login" className="btn">
               Login
             </Link>
