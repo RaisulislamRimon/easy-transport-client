@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
+import logo from "../../../Images/logo.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <React.Fragment>
+      <div className="navbar header-sso shadow-2xl">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -16,8 +18,7 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -29,8 +30,7 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
                 <Link to="/ride">Ride</Link>
               </li>
@@ -42,12 +42,12 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost normal-case text-xl">
-            Easy Transport
+          <Link to="/" className="logo">
+            <img src={logo}></img>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-lg font-bold">
             <li>
               <Link to="/ride">Ride</Link>
             </li>
@@ -57,6 +57,9 @@ const Navbar = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
+            {user?.email ? (<li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>) : ("")}
           </ul>
         </div>
         <div className="navbar-end">
@@ -65,13 +68,13 @@ const Navbar = () => {
               Logout
             </button>
           ) : (
-            <Link to="/login" className="btn">
+            <Link to="/login" className="btn login-btn">
               Login
             </Link>
           )}
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

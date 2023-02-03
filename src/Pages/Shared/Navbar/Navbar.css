@@ -1,0 +1,15 @@
+.logo {
+    max-width: 320px !important;
+}
+
+.header-sso {
+    box-shadow: 0 0 20px 0px #eee;
+    padding: 0 10px 0px 0px;
+}
+
+.login-btn {
+    border-radius: 30px;
+    padding: 19px 26px -7px 23px;
+    width: 98px;
+    height: 8px !important;
+}
