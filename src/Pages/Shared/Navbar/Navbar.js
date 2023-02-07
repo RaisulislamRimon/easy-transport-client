@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/contract">Contract</Link>
+                <Link to="/Contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -61,16 +61,16 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/contract">Contract</Link>
+              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          {user?.email ?(
+          {user?.email ? (
             <button onClick={logOut} className="btn">
               Logout
             </button>
-          ):(
+          ) : (
             <Link to="/login" className="btn">
               Login
             </Link>

@@ -16,6 +16,7 @@ import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
         element: <Freight></Freight>,
       },
       {
-        path: '/contract',
+        path: "/contact",
         element: <Contract></Contract>,
       },
       {
@@ -67,23 +68,20 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-
-        path: '/services',
-        element: <AllCategories></AllCategories>
-      },
-      {
-        path: '/services/:id',
+        path: "/services",
         element: <AllCategories></AllCategories>,
-        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
       },
-
       {
-
+        path: "/services/:id",
+        element: <AllCategories></AllCategories>,
+        loader: async ({ params }) =>
+          fetch(`http://localhost:5000/services/${params.id}`),
+      },
+      {
         path: "/safety",
         element: <SafetyDetails />,
       },
       {
-
         path: "/login",
         element: <Login />,
       },
@@ -91,14 +89,16 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
-      {
-        path: "*",
-        element: <ErrorPage />,
-      },
+      // {
+      //   path: "*",
+      //   element: <ErrorPage />,
+      // },
     ],
-
   },
-
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
 ]);
 
 export default router;

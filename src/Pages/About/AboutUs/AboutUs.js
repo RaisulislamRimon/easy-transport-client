@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import Team from "../Team/Team";
 import Typewriter from "typewriter-effect";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
-
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
   return (
     <div>
       <Team />
@@ -17,8 +16,12 @@ const AboutUs = () => {
       </h1>
       <div></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div >
-          <div data-aos="fade-right" data-aos-duration='1000' className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16">
+        <div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16"
+          >
             <div className="avatar ">
               <div className="w-48 h-48 d-flex justify-center align-items  rounded-full mt-5  ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
@@ -37,10 +40,10 @@ const AboutUs = () => {
                       "Programmer",
                       "Font-end-Developer",
                       "MERN Stack Developer",
-                      "Web Developer"
+                      "Web Developer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
@@ -61,7 +64,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration='1000' >
+        <div data-aos="zoom-in-up" data-aos-duration="1000">
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -80,10 +83,10 @@ const AboutUs = () => {
                       "Font-end-Developer",
                       "Web Developer",
                       "Programmer",
-                      "MERN Stack Developer"
+                      "MERN Stack Developer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
@@ -104,7 +107,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up-left" data-aos-duration='1000' >
+        <div data-aos="fade-up-left" data-aos-duration="1000">
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -120,10 +123,10 @@ const AboutUs = () => {
                       "Web Developer",
                       "Programmer",
                       "MERN Stack Developer",
-                      "Font-end-Developer"
+                      "Font-end-Developer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
@@ -144,7 +147,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-duration='1000'>
+        <div data-aos="fade-right" data-aos-duration="1000">
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -163,10 +166,10 @@ const AboutUs = () => {
                       "MERN Stack Developer",
                       "Programmer",
                       "Web Developer",
-                      "Font-end-Developer"
+                      "Font-end-Developer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
@@ -187,7 +190,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in-down" data-aos-duration='2000'>
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -206,10 +209,10 @@ const AboutUs = () => {
                       "MERN Stack Developer",
                       "Web Developer",
                       "Programmer",
-                      "Font-end-Developer"
+                      "Font-end-Developer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
@@ -230,7 +233,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration='1000'>
+        <div data-aos="fade-left" data-aos-duration="1000">
           <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
             <div className="avatar ">
               <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -248,10 +251,10 @@ const AboutUs = () => {
                     strings: [
                       "MERN Stack Developer",
                       "Web Developer",
-                      "Programmer"
+                      "Programmer",
                     ],
                     autoStart: true,
-                    loop: true
+                    loop: true,
                   }}
                 />
                 <div className="mt-1">
