@@ -1,7 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import AboutUs from "../../Pages/About/AboutUs/AboutUs";
-import Contract from "../../Pages/Contract/Contract";
+import Booking from "../../Pages/Dashboard/booking/Booking";
+import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
+import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import Contact from "../../Pages/Contact/Contact";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -15,6 +19,7 @@ import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 
 const router = createBrowserRouter([
@@ -61,7 +66,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contract></Contract>,
+        element: <Contact></Contact>,
       },
       {
         path: "/about",
@@ -96,8 +101,22 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "*",
-    element: <ErrorPage />,
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout></DashboardLayout>
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardHome></DashboardHome>,
+      },
+      {
+        path: "/dashboard/booking",
+        element: <Booking></Booking>,
+      },
+    ],
   },
 ]);
 

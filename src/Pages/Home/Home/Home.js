@@ -1,3 +1,4 @@
+import GoogleMaps from "../../../Components/GoogleMaps";
 import React, { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
@@ -6,12 +7,12 @@ import Rides from "../Rides/Rides";
 import Safety from "../Safety/Safety";
 
 const Home = () => {
-  const [cars, Setcars] = useState([]);
+  const [cars, setCars] = useState([]);
   console.log(cars);
   useEffect(() => {
     fetch("http://localhost:5000/services")
       .then((res) => res.json())
-      .then((data) => Setcars(data));
+      .then((data) => setCars(data));
   }, []);
   return (
     <div>
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
 
       <CommunitiesCards></CommunitiesCards>
+      <GoogleMaps></GoogleMaps>
       <Safety></Safety>
     </div>
   );

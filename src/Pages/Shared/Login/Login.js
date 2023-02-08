@@ -167,7 +167,10 @@ const Login = () => {
               </div>
               <p>
                 New to this website?{" "}
-                <Link to="/register" className="link link-primary">
+                <Link
+                  to="/register"
+                  className="link link-primary"
+                >
                   Register a New Account
                 </Link>
               </p>
