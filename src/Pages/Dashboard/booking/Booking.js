@@ -5,7 +5,7 @@ const Booking = () => {
   const { user } = useContext(AuthContext);
   const [bookins, setBookins] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/booking/${user?.email}`)
+    fetch(`https://easy-transport-server.vercel.app/booking/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setBookins(data));
   }, []);
@@ -24,8 +24,8 @@ const Booking = () => {
             </tr>
           </thead>
           <tbody>
-            {bookins.map((booking) => (
-              <tr>
+            {bookins.map((booking, idx) => (
+              <tr key={idx}>
                 <th>#{booking.boooking_code}</th>
                 <td>{booking.pickupLocation}</td>
                 <td>{booking.destination}</td>

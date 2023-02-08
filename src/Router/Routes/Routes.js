@@ -5,7 +5,6 @@ import Booking from "../../Pages/Dashboard/booking/Booking";
 import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
 import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
 import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
-import Contact from "../../Pages/Contact/Contact";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -21,6 +20,7 @@ import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
+import Contact from "../../Pages/Contract/Contract";
 
 const router = createBrowserRouter([
   {
@@ -80,7 +80,7 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/safety",

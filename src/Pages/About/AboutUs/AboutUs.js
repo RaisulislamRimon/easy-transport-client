@@ -47,18 +47,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
@@ -90,18 +90,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
@@ -130,18 +130,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
@@ -173,18 +173,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
@@ -216,18 +216,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
@@ -258,18 +258,18 @@ const AboutUs = () => {
                   }}
                 />
                 <div className="mt-1">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
                 <div className="mt-2 text-2xl flex gap-2 justify-center ">
                   <i className="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-github"></i>
                 </div>
               </div>
             </div>
