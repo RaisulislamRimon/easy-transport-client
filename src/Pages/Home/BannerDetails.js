@@ -118,7 +118,7 @@ const BannerDetails = () => {
             </div>
           </form>
  
-          <div className="card flex-shrink-0 w-full max-w-sm ">
+          {/* <div className="card flex-shrink-0 w-full max-w-sm ">
             <div className="card-body">
               <h1 className="text-4xl font-bold">Request a ride now</h1>
               <div className="form-control">
@@ -148,7 +148,7 @@ const BannerDetails = () => {
               </div>
             </div>
  
-          </div>
+          </div> */}
         </div>
       </div>
     </div >
