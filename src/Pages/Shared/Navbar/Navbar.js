@@ -40,6 +40,9 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
+              <li>
+                <Link to="/Contact">Contact</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="logo">
@@ -57,9 +60,13 @@ const Navbar = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
+
             {user?.email ? (<li>
               <Link to="/dashboard">Dashboard</Link>
             </li>) : ("")}
+            <li>
+              <Link to="/Contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">

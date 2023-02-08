@@ -5,6 +5,7 @@ import Booking from "../../Pages/Dashboard/booking/Booking";
 import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
 import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
 import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import Contact from "../../Pages/Contact/Contact";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -14,10 +15,12 @@ import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
+import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 
 const router = createBrowserRouter([
   {
@@ -62,8 +65,26 @@ const router = createBrowserRouter([
         element: <Freight></Freight>,
       },
       {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
         path: "/about",
         element: <AboutUs />,
+      },
+      {
+        path: "/services",
+        element: <AllCategories></AllCategories>,
+      },
+      {
+        path: "/services/:id",
+        element: <AllCategories></AllCategories>,
+        loader: async ({ params }) =>
+          fetch(`http://localhost:5000/services/${params.id}`),
+      },
+      {
+        path: "/safety",
+        element: <SafetyDetails />,
       },
       {
         path: "/login",
@@ -73,10 +94,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
-      {
-        path: "*",
-        element: <ErrorPage />,
-      },
+      // {
+      //   path: "*",
+      //   element: <ErrorPage />,
+      // },
     ],
   },
   {
