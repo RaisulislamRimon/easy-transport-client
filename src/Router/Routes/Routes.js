@@ -80,7 +80,7 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          await fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/safety",

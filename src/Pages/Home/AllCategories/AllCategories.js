@@ -19,9 +19,13 @@ const AllCategories = () => {
 
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+    <div>
+      <h2>All Cetagories</h2>
+    </div>
+    <div className="grid gap-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+      {/* <div className="card w-96 bg-base-100 shadow-xl">
         <h2>All Cetagories</h2>
-      </div>
+      </div> */}
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
           <img src={service?.product2[1]?.picture} alt="Shoes" />
@@ -77,6 +81,7 @@ const AllCategories = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
