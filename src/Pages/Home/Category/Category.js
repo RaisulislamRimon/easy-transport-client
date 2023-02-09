@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const Category = ({ cars }) => {
   const { picture, name, _id } = cars;
-
   return (
     <div className="min-h-screen mt-6">
       <div>

@@ -4,7 +4,6 @@ import AboutUs from "../../Pages/About/AboutUs/AboutUs";
 import Booking from "../../Pages/Dashboard/booking/Booking";
 import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
 import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
-import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -72,15 +71,16 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutUs />,
       },
-      {
-        path: "/services",
-        element: <AllCategories></AllCategories>,
-      },
+      // {
+      //   path: "/services",
+      //   element: <AllCategories></AllCategories>,
+      //   // loader: () => fetch('http://localhost:5000/services')
+      // },
       {
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          await fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/safety",
