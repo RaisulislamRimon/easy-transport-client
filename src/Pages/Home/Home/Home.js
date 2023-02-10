@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <Banner />
+      <Banner /> <GoogleMaps></GoogleMaps>
       <Rides></Rides>
       <h1 className=" text-center text-4xl font-bold mb-12 ">
         What Do You Need?
@@ -38,9 +38,7 @@ const Home = () => {
           <Category key={cars._id} cars={cars}></Category>
         ))}
       </div>
-
       <CommunitiesCards></CommunitiesCards>
-      <GoogleMaps></GoogleMaps>
       <Safety></Safety>
       <Chat></Chat>
     </div>
