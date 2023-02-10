@@ -1,4 +1,3 @@
-import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 
@@ -56,56 +55,73 @@ const AllCategories = () => {
         {/* <div className="card w-96 bg-base-100 shadow-xl">
         <h2>All Cetagories</h2>
       </div> */}
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96  ml-12 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500  shadow-xl">
           <figure>
-            <img src={service?.product2[1]?.picture} alt="Shoes" />
+            <img src={service?.product1[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{service?.product2[1]?.name}</h2>
+            <h2 className="card-title font-bold">{service?.product1[0]?.name}</h2>
+            <p className='font-bold'>{service?.product1[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 ml-6 shadow-xl">
           <figure>
-            <img src={service?.product3[2]?.picture} alt="Shoes" />
+            <img src={service?.product2[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{service?.product3[2]?.name}</h2>
+            <h2 className="card-title font-bold">{service?.product2[0]?.name}</h2>
+            <p className='font-bold'>{service?.product2[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 shadow-xl">
           <figure>
-            <img src={service?.product4[3]?.picture} alt="Shoes" />
+            <img src={service?.product3[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{service?.product4[3]?.name}</h2>
+            <h2 className="card-title font-bold">{service?.product3[0]?.name}</h2>
+            <p className='font-bold'>{service?.product3[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mb-8 ml-12 mt-8 shadow-xl">
           <figure>
-            <img src={service?.product5[4]?.picture} alt="Shoes" />
+            <img src={service?.product4[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{service?.product5[4]?.name}</h2>
+            <h2 className="card-title font-bold">{service?.product4[0]?.name}</h2>
+            <p className='font-bold'>{service?.product4[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
             </div>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mb-8 ml-6 mt-8 shadow-xl">
           <figure>
-            <img src={service?.product6[5]?.picture} alt="Shoes" />
+            <img src={service?.product5[0]?.picture} alt="Shoes" className='h-72'/>
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{service?.product6[5]?.name}</h2>
+            <h2 className="card-title font-bold">{service?.product5[0]?.name}</h2>
+            <p className='font-bold'>{service?.product5[0]?.description}</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Ride Now</button>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mt-8 mb-8 shadow-xl">
+          <figure>
+            <img src={service?.product6[0]?.picture} alt="Shoes" className='h-72'/>
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title font-bold">{service?.product6[0]?.name}</h2>
+            <p className='font-bold'>{service?.product6[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
             </div>

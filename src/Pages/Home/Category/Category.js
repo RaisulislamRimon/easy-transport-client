@@ -2,20 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Category = ({ cars }) => {
-  const { picture, name, _id } = cars;
+  const { picture, Catagory_name,description, _id } = cars;
   return (
     <div className="min-h-screen mt-6">
       <div>
         <div className="flex justify-center">
-          <div className="rounded-lg shadow-lg bg-white max-w-sm">
+          <div className="rounded-lg shadow-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 max-w-sm">
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-              <img className="rounded-t-lg h-48" src={picture} alt="" />
+              <img className="rounded-t-lg h-64 w-full" src={picture} alt=""  />
             </a>
             <div className="p-6">
-              <h5 className="text-gray-900 text-xl font-medium mb-2">{name}</h5>
-              <p className="text-gray-700 text-base mb-4">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <h5 className="text-gray-900 text-xl font-bold  mb-2">{Catagory_name}</h5>
+              <p className="text-gray-700 font-bold text-base mb-4">
+                {description}
               </p>
               <button
                 type="button"
