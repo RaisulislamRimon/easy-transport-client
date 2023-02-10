@@ -1,5 +1,5 @@
 import GoogleMaps from "../../../Components/GoogleMaps";
-import React, { useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 import CommunitiesCards from "../Communities/CommunitiesCards";
@@ -26,8 +26,46 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
+  const Paragraph = lazy(() => import("./Paragraph.js"));
+  const [showModal, setShowModal] = useState("block");
+  useEffect(() => {
+    setTimeout(() => {
+      setShowModal("hidden");
+    }, 4000);
+  }, []);
   return (
-    <div>
+    <div className="relative">
+      <div>
+        <Suspense fallback={<div></div>}>
+          <Paragraph />
+        </Suspense>
+      </div>
+      <div className={`${showModal}`}>
+        {/* <div className="absolute w-2/3 flex justify-center items-center"> */}
+        <div className="text-center">
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://d3bzyjrsc4233l.cloudfront.net/news/Guys_2zHXVKp.png"
+                alt="pop-up"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">
+                First time here? Get 10% off your first Ride
+              </h2>
+              <div className="badge badge-secondary">NEW Offer</div>
+              <p>
+                This offer is valid for new users only. Click here to get 10%
+                off your first ride.
+              </p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Ride</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Banner /> <GoogleMaps></GoogleMaps>
       <Rides></Rides>
       <h1 className=" text-center text-4xl font-bold mb-12 ">
