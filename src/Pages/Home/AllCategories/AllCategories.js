@@ -172,7 +172,6 @@ const AllCategories = () => {
               alt="Shoes"
               className="h-72"
             />
-            
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">
@@ -199,7 +198,6 @@ const AllCategories = () => {
               alt="Shoes"
               className="h-72"
             />
-      
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">
