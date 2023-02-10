@@ -1,5 +1,6 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
+import ReviewModal from "./ReviewModal/ReviewModal";
 
 const AllCategories = () => {
   const service = useLoaderData();
@@ -64,6 +65,7 @@ const AllCategories = () => {
             <p className='font-bold'>{service?.product1[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
             </div>
           </div>
         </div>
@@ -76,6 +78,7 @@ const AllCategories = () => {
             <p className='font-bold'>{service?.product2[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
             </div>
           </div>
         </div>
@@ -88,6 +91,8 @@ const AllCategories = () => {
             <p className='font-bold'>{service?.product3[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
+
             </div>
           </div>
         </div>
@@ -100,35 +105,44 @@ const AllCategories = () => {
             <p className='font-bold'>{service?.product4[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mb-8 ml-6 mt-8 shadow-xl">
           <figure>
-            <img src={service?.product5[0]?.picture} alt="Shoes" className='h-72'/>
+            <img src={service?.product5[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">{service?.product5[0]?.name}</h2>
             <p className='font-bold'>{service?.product5[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
+
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mt-8 mb-8 shadow-xl">
           <figure>
-            <img src={service?.product6[0]?.picture} alt="Shoes" className='h-72'/>
+            <img src={service?.product6[0]?.picture} alt="Shoes" className='h-72' />
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">{service?.product6[0]?.name}</h2>
             <p className='font-bold'>{service?.product6[0]?.description}</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="book-modal" className="btn btn-primary text-white">Review</label>
+
             </div>
           </div>
         </div>
       </div>
+      {
+        <ReviewModal></ReviewModal>
+      }
     </div>
+
   );
 };
 
