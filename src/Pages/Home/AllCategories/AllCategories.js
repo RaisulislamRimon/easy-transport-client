@@ -7,7 +7,6 @@ import ModalSix from "../../Modals/ModalSix";
 import ModalThree from "../../Modals/ModalThree";
 import ModalTwo from "../../Modals/ModalTwo";
 import ReviewModal from "./ReviewModal/ReviewModal";
-
 const AllCategories = () => {
   const service = useLoaderData();
   console.log(service);
@@ -77,9 +76,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product1[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal1" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
@@ -104,9 +102,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product2[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal2" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
@@ -131,9 +128,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product3[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal3" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
@@ -158,9 +154,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product4[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal4" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
@@ -177,11 +172,6 @@ const AllCategories = () => {
               alt="Shoes"
               className="h-72"
             />
-            <img
-              src={service?.product5[0]?.picture}
-              alt="Shoes"
-              className="h-72"
-            />
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">
@@ -190,9 +180,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product5[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal5" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
@@ -209,11 +198,6 @@ const AllCategories = () => {
               alt="Shoes"
               className="h-72"
             />
-            <img
-              src={service?.product6[0]?.picture}
-              alt="Shoes"
-              className="h-72"
-            />
           </figure>
           <div className="card-body">
             <h2 className="card-title font-bold">
@@ -222,9 +206,8 @@ const AllCategories = () => {
             <p className="font-bold">{service?.product6[0]?.description}</p>
             <div className="card-actions justify-end">
               <label htmlFor="booking-modal6" className="btn btn-primary">
-                Book Now
+                Ride Now
               </label>
-              {/* <button className="btn btn-primary">Ride Now</button> */}
               <label
                 htmlFor="book-modal"
                 className="btn btn-primary text-white"
