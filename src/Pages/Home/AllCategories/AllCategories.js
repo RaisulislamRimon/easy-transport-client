@@ -1,5 +1,11 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import ModalFive from "../../Modals/ModalFive";
+import ModalFour from "../../Modals/ModalFour";
+import ModalOne from "../../Modals/ModalOne";
+import ModalSix from "../../Modals/ModalSix";
+import ModalThree from "../../Modals/ModalThree";
+import ModalTwo from "../../Modals/ModalTwo";
 
 const AllCategories = () => {
   const service = useLoaderData();
@@ -57,75 +63,132 @@ const AllCategories = () => {
       </div> */}
         <div className="card w-96  ml-12 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500  shadow-xl">
           <figure>
-            <img src={service?.product1[0]?.picture} alt="Shoes" className='h-72' />
+            <img
+              src={service?.product1[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product1[0]?.name}</h2>
-            <p className='font-bold'>{service?.product1[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product1[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product1[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal1" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 ml-6 shadow-xl">
           <figure>
-            <img src={service?.product2[0]?.picture} alt="Shoes" className='h-72' />
+            <img
+              src={service?.product2[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product2[0]?.name}</h2>
-            <p className='font-bold'>{service?.product2[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product2[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product2[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal2" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 shadow-xl">
           <figure>
-            <img src={service?.product3[0]?.picture} alt="Shoes" className='h-72' />
+            <img
+              src={service?.product3[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product3[0]?.name}</h2>
-            <p className='font-bold'>{service?.product3[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product3[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product3[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal3" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mb-8 ml-12 mt-8 shadow-xl">
           <figure>
-            <img src={service?.product4[0]?.picture} alt="Shoes" className='h-72' />
+            <img
+              src={service?.product4[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product4[0]?.name}</h2>
-            <p className='font-bold'>{service?.product4[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product4[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product4[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal4" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mb-8 ml-6 mt-8 shadow-xl">
           <figure>
-            <img src={service?.product5[0]?.picture} alt="Shoes" className='h-72'/>
+            <img
+              src={service?.product5[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product5[0]?.name}</h2>
-            <p className='font-bold'>{service?.product5[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product5[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product5[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal5" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
         </div>
         <div className="card w-96 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 mt-8 mb-8 shadow-xl">
           <figure>
-            <img src={service?.product6[0]?.picture} alt="Shoes" className='h-72'/>
+            <img
+              src={service?.product6[0]?.picture}
+              alt="Shoes"
+              className="h-72"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title font-bold">{service?.product6[0]?.name}</h2>
-            <p className='font-bold'>{service?.product6[0]?.description}</p>
+            <h2 className="card-title font-bold">
+              {service?.product6[0]?.name}
+            </h2>
+            <p className="font-bold">{service?.product6[0]?.description}</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Ride Now</button>
+              <label htmlFor="booking-modal6" className="btn btn-primary">
+                Book Now
+              </label>
             </div>
           </div>
+          <ModalOne key={service._id} service={service}></ModalOne>
+
+          <ModalTwo key={service._id} service={service}></ModalTwo>
+          <ModalThree key={service._id} service={service}></ModalThree>
+          <ModalFour key={service._id} service={service}></ModalFour>
+
+          <ModalFive key={service._id} service={service}></ModalFive>
+
+          <ModalSix key={service._id} service={service}></ModalSix>
         </div>
       </div>
     </div>
