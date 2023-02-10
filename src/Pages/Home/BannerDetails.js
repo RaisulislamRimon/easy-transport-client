@@ -8,6 +8,7 @@ import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import LoginPopUp from "./LoginPopUp";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Iframe from "react-iframe";
 
 const BannerDetails = () => {
   const { user } = useContext(AuthContext);
@@ -21,42 +22,28 @@ const BannerDetails = () => {
 
     // random code
 
-    const makeid = (length) => {
-      let result = "";
-      const characters =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-      const charactersLength = characters.length;
-      let counter = 0;
-      while (counter < length) {
-        result += characters.charAt(
-          Math.floor(Math.random() * charactersLength)
-        );
-        counter += 1;
-      }
-      return result;
-    };
+    // const makeid = (length) => {
+    //   let result = "";
+    //   const characters =
+    //     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    //   const charactersLength = characters.length;
+    //   let counter = 0;
+    //   while (counter < length) {
+    //     result += characters.charAt(
+    //       Math.floor(Math.random() * charactersLength)
+    //     );
+    //     counter += 1;
+    //   }
+    //   return result;
+    // };
 
     if (!pickupLocation) {
       toast.error("Please enter Pickup location");
     } else if (!destination) {
       toast.error("Please enter destination");
     } else {
-      axios
-        .post("http://localhost:5000/store/booking", {
-          boooking_code: makeid(10),
-          pickupLocation: pickupLocation,
-          destination: destination,
-          email: user?.email,
-        })
-        .then((response) => {
-          if (response.data.acknowledged) {
-            navigate("/dashboard");
-          }
-          console.log(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+      const searchUrl = `/ride/finder?pickup_location=${pickupLocation}&destination=${destination}`;
+      navigate(searchUrl);
     }
   };
 
@@ -72,7 +59,7 @@ const BannerDetails = () => {
         <div className="text-center lg:text-left">
           <img src={car} alt="" />
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm custom-card-box shadow-2xl">
+        <div className="card flex-shrink-0 w-full max-w-sm custom-card-box">
           <form onSubmit={formHandaler}>
             <div className="card-body">
               <h1 className="text-2xl font-bold">Request a ride now?</h1>

@@ -5,6 +5,7 @@ import Booking from "../../Pages/Dashboard/booking/Booking";
 import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
 import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
 import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import Finder from "../../Pages/Finder/Finder";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/ride/finder",
+        element: <Finder></Finder>,
       },
       {
         path: "/help",
