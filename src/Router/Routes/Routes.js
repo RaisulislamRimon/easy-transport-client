@@ -74,7 +74,7 @@ const router = createBrowserRouter([
       // {
       //   path: "/services",
       //   element: <AllCategories></AllCategories>,
-      //   // loader: () => fetch('http://localhost:5000/services')
+      //   // loader: () => fetch('https://easy-transport-server.vercel.app/services')
       // },
       {
         path: "/services/:id",
