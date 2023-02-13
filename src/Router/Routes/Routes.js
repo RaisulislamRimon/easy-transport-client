@@ -20,7 +20,7 @@ import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Contact from "../../Pages/Contract/Contract";
-import Carrier from "../../Pages/Shared/Others/Carrier/Carrier";
+import Careers from "../../Pages/Shared/Others/Careers/Careers";
 
 const router = createBrowserRouter([
   {
@@ -73,8 +73,8 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/carrier",
-        element: <Carrier />,
+        path: "/Careers",
+        element: <Careers />,
       },
       // {
       //   path: "/services",

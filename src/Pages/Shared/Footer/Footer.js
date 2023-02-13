@@ -40,8 +40,8 @@ const Footer = () => {
           <Link to="/" className="link link-hover">
             Jobs
           </Link>
-          <Link to="/carrier" className="link link-hover hover:no-underline">
-            Carrier
+          <Link to="/careers" className="link link-hover hover:no-underline">
+            Careers
           </Link>
         </div>
         <div>
