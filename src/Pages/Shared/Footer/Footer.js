@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h2 className="text-4xl">Easy TransPort</h2>
           <p>
-            #Easy Transport
+            Easy Transport
             <br />
             Providing smooth Riding services since 2022.
           </p>
@@ -40,8 +40,8 @@ const Footer = () => {
           <Link to="/" className="link link-hover">
             Jobs
           </Link>
-          <Link to="/" className="link link-hover">
-            Press kit
+          <Link to="/carrier" className="link link-hover hover:no-underline">
+            Carrier
           </Link>
         </div>
         <div>

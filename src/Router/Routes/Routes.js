@@ -20,6 +20,7 @@ import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Contact from "../../Pages/Contract/Contract";
+import Carrier from "../../Pages/Shared/Others/Carrier/Carrier";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutUs />,
       },
+      {
+        path: "/carrier",
+        element: <Carrier />,
+      },
       // {
       //   path: "/services",
       //   element: <AllCategories></AllCategories>,
@@ -80,7 +85,9 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          fetch(
+            `https://easy-transport-server.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/safety",
