@@ -7,7 +7,6 @@ import ModalSix from "../../Modals/ModalSix";
 import ModalThree from "../../Modals/ModalThree";
 import ModalTwo from "../../Modals/ModalTwo";
 import ReviewModal from "./ReviewModal/ReviewModal";
-
 const AllCategories = () => {
   const service = useLoaderData();
   console.log(service);
