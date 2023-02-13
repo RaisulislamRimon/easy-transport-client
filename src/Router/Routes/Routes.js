@@ -13,8 +13,10 @@ import Freight from "../../Pages/Help/Freight";
 import Help from "../../Pages/Help/Help";
 import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
+import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
+import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
@@ -69,6 +71,21 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs />,
+      },
+      // {
+      //   path: "/services",
+      //   element: <AllCategories></AllCategories>,
+      //   // loader: () => fetch('https://easy-transport-server.vercel.app/services')
+      // },
+      {
+        path: "/services/:id",
+        element: <AllCategories></AllCategories>,
+        loader: async ({ params }) =>
+          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+      },
+      {
+        path: "/safety",
+        element: <SafetyDetails />,
       },
       {
         path: "/login",
