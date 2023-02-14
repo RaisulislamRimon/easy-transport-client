@@ -21,12 +21,6 @@ import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-<<<<<<< HEAD
-import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
-import Contact from "../../Pages/Contract/Contract";
-import Careers from "../../Pages/Shared/Others/Careers/Careers";
-=======
->>>>>>> 9973225402dfaef51d6a3491b5e5e08337330438
 
 const router = createBrowserRouter([
   {

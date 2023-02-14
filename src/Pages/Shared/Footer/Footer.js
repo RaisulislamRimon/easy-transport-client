@@ -8,17 +8,14 @@ const Footer = () => {
     <div>
       <footer className="footer p-10 bg-base-200 text-base-content">
         <div>
-<<<<<<< HEAD
           <h2 className="text-4xl">Easy TransPort</h2>
           <p>
             Easy Transport
             <br />
             Providing smooth Riding services since 2022.
           </p>
-=======
           <h2 className='text-4xl'>Easy TransPort</h2>
           <p>#Easy Transport<br />Providing smooth Riding services since 2022.</p>
->>>>>>> 9973225402dfaef51d6a3491b5e5e08337330438
         </div>
         <div>
           <span className="footer-title">Services</span>
@@ -29,7 +26,6 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title">Company</span>
-<<<<<<< HEAD
           <Link to="/about" className="link link-hover">
             About us
           </Link>
@@ -42,12 +38,6 @@ const Footer = () => {
           <Link to="/careers" className="link link-hover hover:no-underline">
             Careers
           </Link>
-=======
-          <Link to="/about" className="link link-hover">About us</Link>
-          <Link className="link link-hover">Contact</Link>
-          <Link className="link link-hover">Jobs</Link>
-          <Link className="link link-hover">Press kit</Link>
->>>>>>> 9973225402dfaef51d6a3491b5e5e08337330438
         </div>
         <div>
           {/* <span className="footer-title">Legal</span>
