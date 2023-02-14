@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <div className="navbar header-sso shadow-2xl">
+      <div className="navbar bg-base-100 header-sso">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,8 +18,7 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -31,8 +30,7 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
                 <Link to="/ride">Ride</Link>
               </li>
@@ -42,17 +40,14 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="/Contact">Contact</Link>
-              </li>
             </ul>
           </div>
           <Link to="/" className="logo">
-            <img src={logo} alt=""></img>
+            <img src={logo}></img>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg font-bold">
+          <ul className="menu menu-horizontal px-1">
             <li>
               <Link to="/ride">Ride</Link>
             </li>
@@ -62,7 +57,6 @@ const Navbar = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
-
             {user?.email ? (
               <li>
                 <Link to="/dashboard">Dashboard</Link>
@@ -70,9 +64,6 @@ const Navbar = () => {
             ) : (
               ""
             )}
-            <li>
-              <Link to="/Contact">Contact</Link>
-            </li>
           </ul>
         </div>
         <div className="navbar-end">

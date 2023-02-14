@@ -10,23 +10,12 @@ import ReviewModal from "./ReviewModal/ReviewModal";
 const AllCategories = () => {
   const service = useLoaderData();
   console.log(service);
-  // const { isLoading, error, data } = useQuery({
-  //   queryKey: ["service"],
-  //   queryFn: () =>
-  //     fetch("https://easy-transport-server.vercel.app/services")
-  //       .then((res) => res.json()
-  //       ),
-  // });
-  // console.log(service)
-  // if (isLoading) return <h2>Loader</h2>
-
-  // if (error) return <LoadingError />;
-
   return (
     <div>
-      <div>
-        <h2 className="text-center my-5">All Cetagories</h2>
-      </div>
+
+      <h1>
+        All Categories
+      </h1>
 
       {/* search bar */}
       <div className="flex justify-end mt-5 mb-10 mr-10">

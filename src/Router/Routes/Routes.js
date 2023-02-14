@@ -4,6 +4,8 @@ import AboutUs from "../../Pages/About/AboutUs/AboutUs";
 import Booking from "../../Pages/Dashboard/booking/Booking";
 import DashboardHome from "../../Pages/Dashboard/home/DashboardHome";
 import DashboardLayout from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import DashboardMain from "../../Pages/Dashboard/Layouts/DashboardLayout";
+import Finder from "../../Pages/Finder/Finder";
 import Bikes from "../../Pages/Help/Bikes";
 import Business from "../../Pages/Help/Business";
 import Driving from "../../Pages/Help/Driving";
@@ -11,6 +13,7 @@ import Freight from "../../Pages/Help/Freight";
 import Help from "../../Pages/Help/Help";
 import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
+import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
 import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
@@ -18,9 +21,12 @@ import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+<<<<<<< HEAD
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Contact from "../../Pages/Contract/Contract";
 import Careers from "../../Pages/Shared/Others/Careers/Careers";
+=======
+>>>>>>> 9973225402dfaef51d6a3491b5e5e08337330438
 
 const router = createBrowserRouter([
   {
@@ -31,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/ride/finder",
+        element: <Finder></Finder>,
       },
       {
         path: "/help",
@@ -65,10 +75,6 @@ const router = createBrowserRouter([
         element: <Freight></Freight>,
       },
       {
-        path: "/contact",
-        element: <Contact></Contact>,
-      },
-      {
         path: "/about",
         element: <AboutUs />,
       },
@@ -101,10 +107,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
-      // {
-      //   path: "*",
-      //   element: <ErrorPage />,
-      // },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
   },
   {

@@ -7,8 +7,6 @@ const Banner = () => {
   return (
     <div>
       <BannerDetails></BannerDetails>
-      {/* <Rides></Rides>
-      <CommunitiesCards></CommunitiesCards> */}
     </div>
   );
 };
