@@ -17,14 +17,17 @@ const CheckoutForm = ({ info }) => {
   console.log(resalePrice);
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("vercel server api link/create-payment-intent", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // authorization: `bearer ${localStorage.getItem("accessToken")}`,
-      },
-      body: JSON.stringify({ resalePrice }),
-    })
+    fetch(
+      "vercel server api link/create-payment-intent",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // authorization: `bearer ${localStorage.getItem("accessToken")}`,
+        },
+        body: JSON.stringify({ resalePrice }),
+      }
+    )
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
   }, [resalePrice]);
@@ -41,7 +44,7 @@ const CheckoutForm = ({ info }) => {
       return;
     }
 
-    const { error } = await stripe.createPaymentMethod({
+    const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
       card,
     });
@@ -97,13 +100,16 @@ const CheckoutForm = ({ info }) => {
           }
         });
 
-      fetch(`vercel server api link/makeorderpaid/${_id}`, {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({ isPaid: true }),
-      })
+      fetch(
+        `vercel server api link/makeorderpaid/${_id}`,
+        {
+          method: "PUT",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ isPaid: true }),
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.acknowledged) {

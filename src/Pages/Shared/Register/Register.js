@@ -1,7 +1,7 @@
 import { GoogleAuthProvider } from "firebase/auth";
 import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
-import { FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
@@ -24,7 +24,6 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-
     if (email === "" || password === "" || checked === "") {
       Swal.fire({
         position: "center",
@@ -60,7 +59,7 @@ const Register = () => {
       };
       console.log(userInfo);
 
-      // fetch("https://easy-transport-server.vercel.app/signup", {
+      // fetch("http://localhost:5000/signup", {
       fetch("https://easy-transport-server.vercel.app/signup", {
         method: "POST",
         headers: {
@@ -127,7 +126,7 @@ const Register = () => {
             emailVerified: result?.user?.emailVerified,
           };
 
-          // fetch("https://easy-transport-server.vercel.app/signup", {
+          // fetch("http://localhost:5000/signup", {
           fetch("https://easy-transport-server.vercel.app/signup", {
             method: "POST",
             headers: {
@@ -178,7 +177,6 @@ const Register = () => {
       <Helmet>
         <title>Sign Up | Easy Transport</title>
       </Helmet>
-
       <div className="grid md:grid-cols-2 gap-4">
         <div className="">
           <img
