@@ -18,7 +18,8 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -30,7 +31,8 @@ const Navbar = () => {
 
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li>
                 <Link to="/ride">Ride</Link>
               </li>
@@ -46,7 +48,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="logo">
-            <img src={logo}></img>
+            <img src={logo} alt=""></img>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -61,9 +63,13 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
 
-            {user?.email ? (<li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>) : ("")}
+            {user?.email ? (
+              <li>
+                <Link to="/dashboard">Dashboard</Link>
+              </li>
+            ) : (
+              ""
+            )}
             <li>
               <Link to="/Contact">Contact</Link>
             </li>
