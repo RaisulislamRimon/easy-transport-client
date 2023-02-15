@@ -19,6 +19,7 @@ import Home from "../../Pages/Home/Home/Home";
 import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../../Pages/Shared/Login/Login";
+import Careers from "../../Pages/Shared/Others/Careers/Careers";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutUs />,
       },
+      {
+        path: "/Careers",
+        element: <Careers />,
+      },
       // {
       //   path: "/services",
       //   element: <AllCategories></AllCategories>,
@@ -81,7 +86,9 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          fetch(
+            `https://easy-transport-server.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/safety",
