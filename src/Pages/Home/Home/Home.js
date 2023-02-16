@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <React.Fragment>
       <Banner />
+      <GoogleMaps></GoogleMaps>
       <Rides></Rides>
       <Category></Category>
       <CommunitiesCards></CommunitiesCards>
-      <GoogleMaps></GoogleMaps>
       <Safety></Safety>
     </React.Fragment>
   );
