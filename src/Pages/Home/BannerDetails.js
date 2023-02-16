@@ -49,7 +49,8 @@ const BannerDetails = () => {
 
   // data fetch
   const [divisions, setDivisions] = useState([]);
-  fetch("http://localhost:5000/division")
+  // fetch("http://localhost:5000/division")
+  fetch("https://easy-transport-server.vercel.app/division")
     .then((res) => res.json())
     .then((data) => setDivisions(data));
 
@@ -71,7 +72,8 @@ const BannerDetails = () => {
                 </label>
                 <select
                   name="pickup_location"
-                  className="select w-full max-w-xs custom-input-box">
+                  className="select w-full max-w-xs custom-input-box"
+                >
                   {divisions.map((division) => (
                     <option value={division.name}>
                       {division.name} - {division.bn_name}
@@ -87,7 +89,8 @@ const BannerDetails = () => {
                 </label>
                 <select
                   name="destination"
-                  className="select w-full max-w-xs custom-input-box">
+                  className="select w-full max-w-xs custom-input-box"
+                >
                   {divisions.map((division) => (
                     <option value={division.name}>
                       {division.name} - {division.bn_name}
