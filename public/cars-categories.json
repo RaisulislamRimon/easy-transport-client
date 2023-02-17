@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 1,
+    "categories_name": "car",
+    "img": "https://i.ibb.co/jRSfw49/car-d2d1ab6ff6e94a5ab675.png",
+    "desc": "private car (plural private cars) A car that is for personal use and owned privately, as opposed to a company car or official car etc. (rail transport, US) A railroad passenger car that is either privately owned or used privately, or both."
+  },
+  {
+    "_id": 2,
+    "categories_name": "truck",
+    "img": "https://i.ibb.co/sqdTrpz/truck-3c6cc9e42ccf02e6c58e.png",
+    "desc": "A truck or lorry is a motor vehicle designed to transport cargo, carry specialized payloads, or perform other utilitarian work. Trucks vary greatly in size, power, and configuration, but the vast majority feature body-on-frame construction, with a cabin that is independent of the payload portion of the vehicle."
+  },
+  {
+    "_id": 3,
+    "categories_name": "motorcycle",
+    "img": "https://i.ibb.co/pfm9f90/bike-07567cd39f06dc24c76b.png",
+    "desc": "A motorcycle is a two-wheeled vehicle with an engine. Motorcycles are bigger, heavier, and much faster than bicycles, but they have many similar parts. Like bicycles, motorcycles are often called bikes. Motorcycles are a common form of transportation throughout the world."
+  }
+]

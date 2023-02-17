@@ -74,8 +74,8 @@ const BannerDetails = () => {
                   name="pickup_location"
                   className="select w-full max-w-xs custom-input-box"
                 >
-                  {divisions.map((division) => (
-                    <option value={division.name}>
+                  {divisions.map((division, idx) => (
+                    <option key={idx} value={division.name}>
                       {division.name} - {division.bn_name}
                     </option>
                   ))}
@@ -91,8 +91,8 @@ const BannerDetails = () => {
                   name="destination"
                   className="select w-full max-w-xs custom-input-box"
                 >
-                  {divisions.map((division) => (
-                    <option value={division.name}>
+                  {divisions.map((division, idx) => (
+                    <option key={idx} value={division.name}>
                       {division.name} - {division.bn_name}
                     </option>
                   ))}
