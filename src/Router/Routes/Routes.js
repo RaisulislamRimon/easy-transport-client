@@ -15,6 +15,7 @@ import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Banner from "../../Pages/Home/Banner/Banner";
+import ShowCarsByCategories from "../../Pages/Home/Category/ShowCarsByCategories";
 import Home from "../../Pages/Home/Home/Home";
 import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
@@ -101,6 +102,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/category/:category_name",
+        element: <ShowCarsByCategories />,
+        loader: ({ params }) =>
+          fetch(
+            `https://used-products-resale-server-kappa.vercel.app/books/${params.category_name}`
+          ),
       },
       {
         path: "*",
