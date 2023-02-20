@@ -30,13 +30,13 @@ const CommunitiesCards = () => {
   ];
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center mt-10">
         <h1 className="text-4xl font-bold">
           Global mobility ecosystem driving
         </h1>
         <h1 className="text-4xl font-bold"> Communities forward</h1>
       </div>
-      <div className="grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-11">
+      <div className="grid mt-10 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-11">
         {cardData.map((card) => (
           <CommunitiesCard key={card.id} card={card}></CommunitiesCard>
         ))}

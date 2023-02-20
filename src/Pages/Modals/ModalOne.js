@@ -23,7 +23,7 @@ const ModalOne = ({ service }) => {
       email,
     };
     console.log(booking);
-    fetch(`https://easy-transport-server.vercel.app/services`, {
+    fetch(`https://easy-transport-server-eosin.vercel.app/services`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

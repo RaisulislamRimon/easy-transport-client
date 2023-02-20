@@ -19,7 +19,7 @@ const Business = () => {
           <div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Account and billing</div>
@@ -40,7 +40,7 @@ const Business = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Managing travel and meal programs</div>
@@ -68,7 +68,7 @@ const Business = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Arranging guest and healthcare rides</div>
@@ -88,7 +88,7 @@ const Business = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Using the dashboard</div>

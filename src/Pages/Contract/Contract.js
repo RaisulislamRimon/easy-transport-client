@@ -36,13 +36,13 @@ const Contact = () => {
                 alt=""
                 srcset=""
               />
-              <p className="text-orange-500 text-2xl font-bold">
+              <p className=" text-2xl font-bold mt-10">
                 Easy Transport
               </p>
-              <p className="text-orange-500 text-2xl font-bold">
+              <p className=" text-2xl font-bold">
                 Address: Dhaka,Bangladesh
               </p>
-              <p className="text-orange-500 text-2xl font-bold">
+              <p className=" text-2xl font-bold">
                 Email: easytransport@gmail.com
               </p>
             </div>

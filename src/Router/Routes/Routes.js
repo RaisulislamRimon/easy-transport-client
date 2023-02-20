@@ -11,7 +11,6 @@ import Freight from "../../Pages/Help/Freight";
 import Help from "../../Pages/Help/Help";
 import Marchants from "../../Pages/Help/Marchants";
 import Riders from "../../Pages/Help/Riders";
-import Banner from "../../Pages/Home/Banner/Banner";
 import Home from "../../Pages/Home/Home/Home";
 import SafetyDetails from "../../Pages/Home/SafetyDetails/SafetyDetails";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
@@ -29,6 +28,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/home",
         element: <Home />,
       },
       {
@@ -51,10 +54,10 @@ const router = createBrowserRouter([
         path: "/help/bikes",
         element: <Bikes></Bikes>,
       },
-      {
-        path: "/ride",
-        element: <Banner></Banner>,
-      },
+      // {
+      //   path: "/ride",
+      //   element: <Banner></Banner>,
+      // },
       {
         path: "/help/business",
         element: <Business></Business>,
@@ -71,16 +74,11 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutUs />,
       },
-      // {
-      //   path: "/services",
-      //   element: <AllCategories></AllCategories>,
-      //   // loader: () => fetch('https://easy-transport-server.vercel.app/services')
-      // },
       {
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          fetch(`https://easy-transport-server-eosin.vercel.app/services/${params.id}`),
       },
       {
         path: "/safety",
@@ -94,10 +92,6 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
-      // {
-      //   path: "*",
-      //   element: <ErrorPage />,
-      // },
     ],
   },
   {

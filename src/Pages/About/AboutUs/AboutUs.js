@@ -15,23 +15,22 @@ const AboutUs = () => {
         ..... About us .....
       </h1>
       <div></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         <div>
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  p-5 ml-12 shadow-xl mt-16"
+            className="card bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500  shadow-xl mt-16"
           >
-            <div className="avatar ">
-              <div className="w-48 h-48 d-flex justify-center align-items  rounded-full mt-5  ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+            <div className="avatar w-[400px] h-[300px]  ">
+              <div className="rounded-full mt-5 ml-16 ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
                   src="https://i.ibb.co/mzrJ3Jw/1670482266862.jpg"
                   alt=""
-                  className="border-5"
                 />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
+            <div className="card-body text-black font-bold text-center">
               <p className="text-2xl ">Chamok Barmon</p>
               <div className="text-1xl">
                 <Typewriter
@@ -65,17 +64,17 @@ const AboutUs = () => {
           </div>
         </div>
         <div data-aos="zoom-in-up" data-aos-duration="1000">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
-            <div className="avatar ">
-              <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="card bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-xl mt-16">
+            <div className="avatar w-[400px] h-[300px]">
+              <div className=" mt-5 ml-16  rounded-full  ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
                   src="https://i.ibb.co/30X80r2/320690960-681327823404895-7784678004093660911-n.png"
                   alt=""
                 />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
-              <p className="text-2xl ">Tasfia Jahan Tania</p>
+            <div className="card-body text-black font-bold text-center">
+              <p className="text-2xl">Tasfia Jahan Tania</p>
               <div className="text-1xl">
                 <Typewriter
                   options={{
@@ -108,13 +107,13 @@ const AboutUs = () => {
           </div>
         </div>
         <div data-aos="fade-up-left" data-aos-duration="1000">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-5 ml-12 shadow-xl mt-16">
-            <div className="avatar ">
-              <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="card  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-xl mt-16">
+            <div className="avatar w-[400px] h-[300px] ">
+              <div className=" rounded-full mt-5 ml-16 ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img src="https://i.ibb.co/1vy72dm/RIMON.jpg" alt="" />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
+            <div className="card-body text-black font-bold text-center">
               <p className="text-2xl ">Raisul Islam Rimon</p>
               <div className="text-1xl">
                 <Typewriter
@@ -148,16 +147,16 @@ const AboutUs = () => {
           </div>
         </div>
         <div data-aos="fade-right" data-aos-duration="1000">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
-            <div className="avatar ">
-              <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="card bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 shadow-xl mt-16">
+            <div className="avatar w-[400px] h-[300px] ">
+              <div className=" rounded-full mt-5 ml-16   ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
                   src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/120351632_2979715158924038_7100075884627000207_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH-M-VdVCgQXgH914inOCICh9jI18t6D-iH2MjXy3oP6AzGner3pMiIMgr66-4D6GWfQK02sBsfW5bsAjeOLpfM&_nc_ohc=urbNxtRN_fcAX_glz0T&_nc_ht=scontent.fdac138-1.fna&oh=00_AfDkccd-yFJYaHEPt7ThiCcdLMlozpRCs4cwy3roKddYAg&oe=63EF1D68"
                   alt=""
                 />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
+            <div className="card-body text-black font-bold text-center">
               <p className="text-2xl ">Md Asik</p>
               <div className="text-1xl">
                 <Typewriter
@@ -191,16 +190,16 @@ const AboutUs = () => {
           </div>
         </div>
         <div data-aos="zoom-in-down" data-aos-duration="2000">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
-            <div className="avatar ">
-              <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="card bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 shadow-xl mt-16">
+            <div className="avatar  w-[400px] h-[300px]">
+              <div className="rounded-full mt-5 ml-16 ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
                   src="https://scontent.fdac138-1.fna.fbcdn.net/v/t1.6435-9/56795701_581119252400678_2014714320411164672_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFvMn1f07BhbpXu3YtpNa1CaXqS6oEPZ2ppepLqgQ9narBJi1uX0MCCphxY-2ZSF_tpbXNFJwFm0_hsk96hcRrI&_nc_ohc=3kHDpSyLUbwAX98HrHl&tn=kUhz14FdmQsO1GqT&_nc_ht=scontent.fdac138-1.fna&oh=00_AfCckrlUl0PzaM8TKVvDAjbBI6mDqvci_X9o13WsnWUvtg&oe=63EF1C28"
                   alt=""
                 />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
+            <div className="card-body text-black font-bold text-center">
               <p className="text-2xl ">Md Alamin</p>
               <div className="text-1xl">
                 <Typewriter
@@ -234,16 +233,16 @@ const AboutUs = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <div className="card w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 p-5 ml-12 shadow-xl mt-16">
-            <div className="avatar ">
-              <div className="w-48 h-48 rounded-full mt-5 d-flex justify-center align-items ml-20  ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="card bg-gradient-to-r from-pink-500 to-yellow-500 via-red-500 shadow-xl mt-16">
+            <div className="avatar w-[400px] h-[300px]">
+              <div className=" rounded-full mt-5 ml-16 ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img
                   src="https://i.postimg.cc/d3cJ2K62/IMG-20221208-115127-removebg-removebg-preview.jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div className="card-body text-black font-bold text-center -mt-5">
+            <div className="card-body text-black font-bold text-center">
               <p className="text-2xl ">Robin Mahmud</p>
               <div className="text-1xl">
                 <Typewriter

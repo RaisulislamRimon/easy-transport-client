@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SafetyFirst from "../../../Images/safety-first.jpg";
 import carRent from "../../../assets/car-rent.jpg";
 
 const Safety = () => {
   return (
-    <div className="grid gap-5 lg:grid-cols-2 items-center my-20 lg:mx-20">
+    <div className="grid gap-5 lg:grid-cols-2 items-center my-20 lg:mx-20 mt-[100px]">
       <div>
         <img src={carRent} alt="" />
       </div>

@@ -20,7 +20,7 @@ const Marchants = () => {
           <div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Easy Transport Eats Closuer</div>
@@ -35,7 +35,7 @@ const Marchants = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Account and payments</div>
@@ -53,7 +53,7 @@ const Marchants = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Marketing and Webshop</div>
@@ -69,7 +69,7 @@ const Marchants = () => {
             </div>
             <div
               tabIndex={0}
-              className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+              className="collapse show collapse-arrow border border-base-300 bg-base-100 rounded-box"
             >
               <div className="collapse-title font-medium flex items-center gap-3">
                 <div>Easy Transport Direct</div>

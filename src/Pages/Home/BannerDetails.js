@@ -2,25 +2,29 @@ import React, { useContext, useState } from "react";
 import car from "../../assets/car.jpg";
 import "./BannerDetails.css";
 import toast from "react-hot-toast";
-import { Button } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import LoginPopUp from "./LoginPopUp";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
- 
+import { useLoadScript } from "@react-google-maps/api";
+
 const BannerDetails = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
- 
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.Google_Map_API
+  })
+  // if (!isLoaded) return <div>Loading....</div>
+  // return <div>Map</div>
   const formHandaler = (e) => {
     e.preventDefault();
     const form = e.target;
     const pickupLocation = form.pickup_location.value;
     const destination = form.destination.value;
- 
+
     // random code
- 
+
     const makeid = (length) => {
       let result = "";
       const characters =
@@ -35,14 +39,14 @@ const BannerDetails = () => {
       }
       return result;
     };
- 
+
     if (!pickupLocation) {
       toast.error("Please enter Pickup location");
     } else if (!destination) {
       toast.error("Please enter destination");
     } else {
       axios
-        .post("https://easy-transport-server.vercel.app/store/booking", {
+        .post("https://easy-transport-server-eosin.vercel.app/store/booking", {
           boooking_code: makeid(10),
           pickupLocation: pickupLocation,
           destination: destination,
@@ -59,14 +63,18 @@ const BannerDetails = () => {
         });
     }
   };
- 
+  function Map() {
+
+  }
+
   // data fetch
   const [divisions, setDivisions] = useState([]);
-  fetch("https://easy-transport-server.vercel.app/division")
+  fetch("https://easy-transport-server-eosin.vercel.app/division")
     .then((res) => res.json())
     .then((data) => setDivisions(data));
- 
+
   return (
+
     <div className="hero min-h-screen ">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
@@ -117,7 +125,7 @@ const BannerDetails = () => {
               </div>
             </div>
           </form>
- 
+
           {/* <div className="card flex-shrink-0 w-full max-w-sm ">
             <div className="card-body">
               <h1 className="text-4xl font-bold">Request a ride now</h1>
@@ -147,7 +155,7 @@ const BannerDetails = () => {
                 <button className="btn btn-primary">Request Now</button>
               </div>
             </div>
- 
+
           </div> */}
         </div>
       </div>

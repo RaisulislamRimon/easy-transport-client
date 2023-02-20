@@ -29,13 +29,13 @@ const Rides = () => {
     },
   ];
   return (
-    <div>
+    <div className="mt-[140px]">
       <div className="text-center">
-        <h1 className="text-4xl font-bold">There's an ola ride an everyone</h1>
+        <h1 className="text-4xl font-bold ">There's an ola ride an everyone</h1>
       </div>
-      <div className="grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-11 mb-11">
+      <div className="grid mt-4 mt-10 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-11 mb-11">
         {cardData.map((card) => (
-          <Ride key={card.id} card={card}></Ride>
+          <Ride key={card?.id} card={card}></Ride>
         ))}
       </div>
     </div>

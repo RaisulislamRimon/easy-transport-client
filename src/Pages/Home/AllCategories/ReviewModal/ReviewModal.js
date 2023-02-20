@@ -15,7 +15,7 @@ const ReviewModal = () => {
             email: email,
             message: message
         }
-        fetch('https://easy-transport-server.vercel.app/reviews', {
+        fetch('http://localhost:5000/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -26,7 +26,7 @@ const ReviewModal = () => {
             .then(data => {
                 if (data.acknowledged) {
                     toast.success('Review Successfull');
-                    form.target()
+
                 }
             })
 

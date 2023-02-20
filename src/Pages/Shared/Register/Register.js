@@ -2,7 +2,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
 import { FaGoogle } from "react-icons/fa";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
@@ -11,10 +11,10 @@ const Register = () => {
   const { createUser, updateUserProfile, providerLogin } =
     useContext(AuthContext);
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  // const from = location.state?.from?.pathname || "/";
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -60,8 +60,8 @@ const Register = () => {
       };
       console.log(userInfo);
 
-      // fetch("https://easy-transport-server.vercel.app/signup", {
-      fetch("https://easy-transport-server.vercel.app/signup", {
+      // fetch("https://easy-transport-server-eosin.vercel.app/signup", {
+      fetch("https://easy-transport-server-eosin.vercel.app/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -127,8 +127,8 @@ const Register = () => {
             emailVerified: result?.user?.emailVerified,
           };
 
-          // fetch("https://easy-transport-server.vercel.app/signup", {
-          fetch("https://easy-transport-server.vercel.app/signup", {
+          // fetch("https://easy-transport-server-eosin.vercel.app/signup", {
+          fetch("https://easy-transport-server-eosin.vercel.app/signup", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

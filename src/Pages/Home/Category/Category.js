@@ -2,19 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Category = ({ cars }) => {
-  const { picture, Catagory_name,description, _id } = cars;
+  const { picture, Catagory_name, description, _id } = cars;
   return (
-    <div className="min-h-screen mt-6">
+    <div className="min-h-screen mt-10">
       <div>
         <div className="flex justify-center">
           <div className="rounded-lg shadow-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 max-w-sm">
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-              <img className="rounded-t-lg h-64 w-full" src={picture} alt=""  />
+              <img className="rounded-t-lg h-64 w-full" src={picture} alt="" />
             </a>
             <div className="p-6">
               <h5 className="text-gray-900 text-xl font-bold  mb-2">{Catagory_name}</h5>
               <p className="text-gray-700 font-bold text-base mb-4">
-                {description}
+                {description.slice(0, 100)}...
               </p>
               <button
                 type="button"

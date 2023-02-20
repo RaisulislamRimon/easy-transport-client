@@ -9,26 +9,30 @@ const Team = () => {
   }, []);
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold font-serif mt-10 p-10 bg-base-200 ">
+      <h1 className="text-center text-3xl font-bold font-serif mt-10 ">
         ..... Meet Our Team .....
       </h1>
-      <div className=" p-16 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bg-base-200">
-        <div data-aos="fade-right" data-aos-duration="2000">
-          <img
-            src="https://cdn.pixabay.com/photo/2020/02/20/06/24/team-4864038_1280.jpg"
-            className="max-w-sm rounded-lg lg:ml-52  image-fluid lg:w-96 lg:h-80 md:w-1/2  fluid   shadow-3xl"
-            alt=""
-          />
-        </div>
-
-        <div className="w-full mt-10 ml-10">
-          <h1 className="text-5xl font-bold"> Join Our Journey </h1>
-          <p className="py-6 w-96">
-            We want to talk to people who are up for a challenge and want to
-            work for a truly unique business. It is even more exciting when I am
-            travelling with my friends and family.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
+      <div>
+        <div className="hero mt-12">
+          <div className="hero-content flex-col lg:flex-row w-full gap-10">
+            <div className="text-center lg:text-left lg:w-1/2">
+              <img
+                className="w-full"
+                src="https://cdn.pixabay.com/photo/2020/02/20/06/24/team-4864038_1280.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div className="card flex-shrink-0 lg:w-1/2">
+              <h1 className="text-5xl font-bold"> Join Our Journey </h1>
+              <p className="py-6">
+                We want to talk to people who are up for a challenge and want to
+                work for a truly unique business. It is even more exciting when I am
+                travelling with my friends and family.
+              </p>
+              <button className="btn btn-primary w-2/6">Get Started</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
