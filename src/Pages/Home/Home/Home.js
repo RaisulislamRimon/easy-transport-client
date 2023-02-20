@@ -12,10 +12,10 @@ const Home = () => {
     <React.Fragment>
       <Banner />
       <GoogleMaps></GoogleMaps>
+      <EmailOptin />
       <Rides></Rides>
       <Category></Category>
       <CommunitiesCards></CommunitiesCards>
-      <EmailOptin />
       <Safety></Safety>
     </React.Fragment>
   );
