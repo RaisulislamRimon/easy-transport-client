@@ -15,7 +15,7 @@ const ReviewModal = () => {
             email: email,
             message: message
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://easy-transport-server-eosin.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

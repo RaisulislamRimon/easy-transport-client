@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import "tw-elements";
+import { LoadScript } from '@react-google-maps/api';
 import reportWebVitals from "./reportWebVitals";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -15,7 +16,11 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <App />
+        <LoadScript
+          googleMapsApiKey={process.env.REACT_APP_Google_Map_API}
+        >
+          <App />
+        </LoadScript>
       </AuthProvider>
     </QueryClientProvider>
   </React.StrictMode>
