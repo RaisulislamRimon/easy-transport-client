@@ -7,7 +7,7 @@ import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 const RideBooking = () =>{
     const {user} = useContext(AuthContext)
 
-    const url =`http://localhost:5000/ridebooking/${user?.email}`
+    const url =`https://easy-transport-server-tau.vercel.app/ridebooking/${user?.email}`
     console.log(url);
     const {data:services = []} = useQuery({
         queryKey:['services',user?.email],
@@ -42,9 +42,11 @@ const RideBooking = () =>{
                         services.map((ser,i)=><tr key={ser._id}>
                         <th>{i+1}</th>
                         <td>{ser.name}</td>
+                        <td>$50</td>
                         <td>{ser.address}</td>
                         <td>{ser.phone}</td>
-                        <td>Number</td>
+                        <td>23-02-2023</td>
+                        
                     </tr>)
                        } 
                     </tbody>
