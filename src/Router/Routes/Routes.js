@@ -20,6 +20,7 @@ import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllCategories from "../../Pages/Home/AllCategories/AllCategories";
 import Contact from "../../Pages/Contract/Contract";
+import RideBooking from "../../Pages/Dashboard/RideBooking/RideBooking";
 
 const router = createBrowserRouter([
   {
@@ -80,7 +81,7 @@ const router = createBrowserRouter([
         path: "/services/:id",
         element: <AllCategories></AllCategories>,
         loader: async ({ params }) =>
-          fetch(`https://easy-transport-server.vercel.app/services/${params.id}`),
+          fetch(`https://easy-transport-server-tau.vercel.app/services/${params.id}`),
       },
       {
         path: "/safety",
@@ -110,7 +111,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <DashboardHome></DashboardHome>,
+        element:<DashboardHome></DashboardHome>,
+      },
+      {
+        path: "/dashboard/ride",
+        element:<RideBooking></RideBooking>,
       },
       {
         path: "/dashboard/booking",

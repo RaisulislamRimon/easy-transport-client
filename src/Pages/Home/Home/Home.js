@@ -29,7 +29,7 @@ const Home = () => {
   const [cars, setCars] = useState([]);
   console.log(cars);
   useEffect(() => {
-    fetch("https://easy-transport-server.vercel.app/services")
+    fetch("https://easy-transport-server-tau.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);

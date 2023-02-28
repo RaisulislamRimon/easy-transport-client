@@ -1,29 +1,25 @@
 import React, { useContext } from "react";
-import { toast } from "react-hot-toast";
+import Swal from "sweetalert2";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 const ModalOne = ({ service }) => {
   const { user } = useContext(AuthContext);
-  const handelmodal = (event) => {
+  const handelModal = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
-    const price = form.price.value;
-    const location = form.location.value;
     const phone = form.phone.value;
-    const orderCar = form.orderCar.value;
+    const address = form.address.value;
     const email = form.email.value;
 
     const booking = {
-      orderCar: orderCar,
       name,
-      price,
-      location,
       phone,
+      address,
       email,
     };
     console.log(booking);
-    fetch(`https://easy-transport-server.vercel.app/services`, {
+    fetch(`https://easy-transport-server-tau.vercel.app/services`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -33,7 +29,13 @@ const ModalOne = ({ service }) => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        toast.success("booking Successfully");
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "You have successfully Booking",
+          showConfirmButton: false,
+          timer: 1000,
+        });
       });
   };
   return (
@@ -50,25 +52,28 @@ const ModalOne = ({ service }) => {
 
           <form
             action=""
-            onSubmit={handelmodal}
+            onSubmit={handelModal}
             className="grid grid-cols-1 gap-5 mt-10"
           >
             <input
-              name="name"
               type="text"
-              placeholder={service?.product1[0]?.name}
+              readOnly
+              placeholder={service?.product2[0]?.name}
               className="input w-full font-bold text-black-500 input-bordered"
             />
             <input
               name="name"
               type="text"
+              disabled
               placeholder="Enter Your Name :"
+              defaultValue={user?.displayName}
               className="input w-full font-bold text-black-500  input-bordered"
             />
             <input
               name="email"
               type="email"
-              readOnly
+              defaultValue={user?.email}
+              disabled
               placeholder="Enter Your Email"
               className="input w-full  font-bold text-black-500 input-bordered"
             />

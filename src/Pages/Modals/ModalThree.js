@@ -1,33 +1,30 @@
 import React, { useContext } from "react";
-import { toast } from "react-hot-toast";
+import Swal from "sweetalert2";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 
 const ModalThree = ({service}) => {
   const { user } = useContext(AuthContext)
-  const handelmodal = event =>{
+  const handelModal = event =>{
     event.preventDefault()
     const form = event.target;
     const name =form.name.value;
-    const price = form.price.value;
-    const location = form.location.value;
+    const address = form.address.value;
     const phone = form.phone.value;
-    const orderCar = form.orderCar.value;
     const email = form.email.value;
 
 
     const booking = {
-        orderCar :orderCar,
+        
         name,
-        price,
-        location,
+        address,
         phone,
         email
         
        
     }
   console.log(booking)
-  fetch(`https://easy-transport-server.vercel.app/services`,{
+  fetch(`https://easy-transport-server-tau.vercel.app/services`,{
     method:'POST',
     headers:{
         'content-type':'application/json'
@@ -37,7 +34,13 @@ const ModalThree = ({service}) => {
   .then(res=>res.json())
   .then(data=>{
     console.log(data)
-    toast.success('booking Successfully')
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "You have successfully Booking",
+      showConfirmButton: false,
+      timer: 1000,
+    });
   })
    }
   return(
@@ -47,13 +50,32 @@ const ModalThree = ({service}) => {
             <div className="modal-box relative">
                 <label htmlFor="booking-modal3"  className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                
-               <form action="" onSubmit={handelmodal}  className='grid grid-cols-1 gap-5 mt-10'> 
-               <input name='name' type="text" placeholder={service?.product3[0]?.name} className="input w-full font-bold text-black-500 input-bordered" />
-               <input name='name' type="text"  placeholder='Enter Your Name :'  className="input w-full font-bold text-black-500  input-bordered" />
-               <input  name='email' type="email" readOnly placeholder='Enter Your Email'  className="input w-full  font-bold text-black-500 input-bordered" />  
-              
-               <input name='phone'  placeholder='Enter Your Phone Number' className="input w-full font-bold text-black-500 input-bordered" />
-               <input name='address'  placeholder='Enter Your Address' className="input w-full  font-bold text-black-500 input-bordered" />
+               <form action="" onSubmit={handelModal} className='grid grid-cols-1 gap-5 mt-10'> 
+               <input
+              type="text"
+              readOnly
+              placeholder={service?.product2[0]?.name}
+              className="input w-full font-bold text-black-500 input-bordered"
+            />
+                <input
+              name="name"
+              type="text"
+              disabled
+              placeholder="Enter Your Name :"
+              defaultValue={user?.displayName}
+              className="input w-full font-bold text-black-500  input-bordered"
+            />
+            <input
+              name="email"
+              type="email"
+              defaultValue={user?.email}
+              disabled
+              placeholder="Enter Your Email"
+              className="input w-full  font-bold text-black-500 input-bordered"
+            />
+
+               <input name='phone' type='number'  placeholder='Enter Your Phone Number' className="input w-full font-bold text-black-500 input-bordered" />
+               <input name='address' type='text'  placeholder='Enter Your Address' className="input w-full  font-bold text-black-500 input-bordered" />
                 <button htmlFor="booking-modal3" className='btn w-full btn-accent font-bold'>Submit</button>
                 
                 
